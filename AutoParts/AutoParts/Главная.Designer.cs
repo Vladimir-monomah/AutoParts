@@ -35,6 +35,14 @@
             this.panel = new System.Windows.Forms.Panel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.tabControl = new System.Windows.Forms.TabControl();
+            this.резервнаяКопияToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.восстановлениеБДToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.заказыToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.автомобилиToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.запасныеЧастиToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.заказчикиToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.vinКодыToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.аналогиToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.panel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -42,12 +50,22 @@
             // 
             // функцииToolStripMenuItem
             // 
+            this.функцииToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.резервнаяКопияToolStripMenuItem,
+            this.восстановлениеБДToolStripMenuItem});
             this.функцииToolStripMenuItem.Name = "функцииToolStripMenuItem";
             this.функцииToolStripMenuItem.Size = new System.Drawing.Size(82, 24);
             this.функцииToolStripMenuItem.Text = "Функции";
             // 
             // справочникиToolStripMenuItem
             // 
+            this.справочникиToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.заказыToolStripMenuItem,
+            this.автомобилиToolStripMenuItem,
+            this.запасныеЧастиToolStripMenuItem,
+            this.заказчикиToolStripMenuItem,
+            this.vinКодыToolStripMenuItem,
+            this.аналогиToolStripMenuItem});
             this.справочникиToolStripMenuItem.Name = "справочникиToolStripMenuItem";
             this.справочникиToolStripMenuItem.Size = new System.Drawing.Size(115, 24);
             this.справочникиToolStripMenuItem.Text = "Справочники";
@@ -99,6 +117,54 @@
             this.tabControl.TabIndex = 6;
             this.tabControl.Visible = false;
             // 
+            // резервнаяКопияToolStripMenuItem
+            // 
+            this.резервнаяКопияToolStripMenuItem.Name = "резервнаяКопияToolStripMenuItem";
+            this.резервнаяКопияToolStripMenuItem.Size = new System.Drawing.Size(221, 26);
+            this.резервнаяКопияToolStripMenuItem.Text = "Резервная копия";
+            // 
+            // восстановлениеБДToolStripMenuItem
+            // 
+            this.восстановлениеБДToolStripMenuItem.Name = "восстановлениеБДToolStripMenuItem";
+            this.восстановлениеБДToolStripMenuItem.Size = new System.Drawing.Size(221, 26);
+            this.восстановлениеБДToolStripMenuItem.Text = "Восстановление БД";
+            // 
+            // заказыToolStripMenuItem
+            // 
+            this.заказыToolStripMenuItem.Name = "заказыToolStripMenuItem";
+            this.заказыToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
+            this.заказыToolStripMenuItem.Text = "Заказы";
+            // 
+            // автомобилиToolStripMenuItem
+            // 
+            this.автомобилиToolStripMenuItem.Name = "автомобилиToolStripMenuItem";
+            this.автомобилиToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
+            this.автомобилиToolStripMenuItem.Text = "Автомобили";
+            // 
+            // запасныеЧастиToolStripMenuItem
+            // 
+            this.запасныеЧастиToolStripMenuItem.Name = "запасныеЧастиToolStripMenuItem";
+            this.запасныеЧастиToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
+            this.запасныеЧастиToolStripMenuItem.Text = "Запасные части";
+            // 
+            // заказчикиToolStripMenuItem
+            // 
+            this.заказчикиToolStripMenuItem.Name = "заказчикиToolStripMenuItem";
+            this.заказчикиToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
+            this.заказчикиToolStripMenuItem.Text = "Заказчики";
+            // 
+            // vinКодыToolStripMenuItem
+            // 
+            this.vinКодыToolStripMenuItem.Name = "vinКодыToolStripMenuItem";
+            this.vinКодыToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
+            this.vinКодыToolStripMenuItem.Text = "Vin коды";
+            // 
+            // аналогиToolStripMenuItem
+            // 
+            this.аналогиToolStripMenuItem.Name = "аналогиToolStripMenuItem";
+            this.аналогиToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
+            this.аналогиToolStripMenuItem.Text = "Аналоги";
+            // 
             // Главная
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -132,6 +198,14 @@
         private System.Windows.Forms.Panel panel;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.TabControl tabControl;
+        private System.Windows.Forms.ToolStripMenuItem резервнаяКопияToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem восстановлениеБДToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem заказыToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem автомобилиToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem запасныеЧастиToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem заказчикиToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem vinКодыToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem аналогиToolStripMenuItem;
     }
 }
 
