@@ -89,6 +89,9 @@
     <Compile Include="Объекты\Объекты.Аналоги.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Объекты\Объекты.Заказчик.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Объекты\Объекты.Общее.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -155,6 +158,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Формы\Аналоги.resx">
       <DependentUpon>Аналоги.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Формы\Заказчик.resx">
+      <DependentUpon>Заказчик.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Формы\Заказы.resx">
       <DependentUpon>Заказы.cs</DependentUpon>

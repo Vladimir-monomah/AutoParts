@@ -69,8 +69,8 @@
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.button9 = new System.Windows.Forms.Button();
             this.button15 = new System.Windows.Forms.Button();
+            this.button9 = new System.Windows.Forms.Button();
             this.tabPage4 = new System.Windows.Forms.TabPage();
             this.dataGridView3 = new System.Windows.Forms.DataGridView();
             this.номерАналогаDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -431,8 +431,8 @@
             this.tabPage2.Controls.Add(this.textBox2);
             this.tabPage2.Controls.Add(this.label3);
             this.tabPage2.Controls.Add(this.label4);
-            this.tabPage2.Controls.Add(this.button9);
             this.tabPage2.Controls.Add(this.button15);
+            this.tabPage2.Controls.Add(this.button9);
             this.tabPage2.Location = new System.Drawing.Point(4, 25);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Size = new System.Drawing.Size(1752, 823);
@@ -548,6 +548,16 @@
             this.label4.TabIndex = 24;
             this.label4.Text = "Автомобили";
             // 
+            // button15
+            // 
+            this.button15.Location = new System.Drawing.Point(8, 30);
+            this.button15.Name = "button15";
+            this.button15.Size = new System.Drawing.Size(109, 30);
+            this.button15.TabIndex = 22;
+            this.button15.Text = "Добавить";
+            this.button15.UseVisualStyleBackColor = true;
+            this.button15.Click += new System.EventHandler(this.button15_Click);
+            // 
             // button9
             // 
             this.button9.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -558,16 +568,6 @@
             this.button9.TabIndex = 17;
             this.button9.UseVisualStyleBackColor = true;
             this.button9.Click += new System.EventHandler(this.button9_Click);
-            // 
-            // button15
-            // 
-            this.button15.Location = new System.Drawing.Point(8, 30);
-            this.button15.Name = "button15";
-            this.button15.Size = new System.Drawing.Size(109, 30);
-            this.button15.TabIndex = 22;
-            this.button15.Text = "Добавить";
-            this.button15.UseVisualStyleBackColor = true;
-            this.button15.Click += new System.EventHandler(this.button15_Click);
             // 
             // tabPage4
             // 
@@ -777,6 +777,7 @@
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(1633, 30);
             this.textBox5.TabIndex = 25;
+            this.textBox5.TextChanged += new System.EventHandler(this.textBox5_TextChanged);
             // 
             // label9
             // 
@@ -807,6 +808,7 @@
             this.button29.TabIndex = 22;
             this.button29.Text = "Добавить";
             this.button29.UseVisualStyleBackColor = true;
+            this.button29.Click += new System.EventHandler(this.button29_Click);
             // 
             // button24
             // 
