@@ -50,95 +50,90 @@
             this.buttonRefresh = new System.Windows.Forms.Button();
             this.buttonDelete = new System.Windows.Forms.Button();
             this.buttonAdd = new System.Windows.Forms.Button();
-            this.заказыTableAdapter = new AutoParts.AutoPartsDataSetTableAdapters.ЗаказыTableAdapter();
             this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.tabPage4 = new System.Windows.Forms.TabPage();
-            this.tabPage5 = new System.Windows.Forms.TabPage();
-            this.tabPage6 = new System.Windows.Forms.TabPage();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
-            this.dataGridView2 = new System.Windows.Forms.DataGridView();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.button9 = new System.Windows.Forms.Button();
-            this.button15 = new System.Windows.Forms.Button();
-            this.dataGridView3 = new System.Windows.Forms.DataGridView();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.button17 = new System.Windows.Forms.Button();
-            this.button22 = new System.Windows.Forms.Button();
-            this.dataGridView4 = new System.Windows.Forms.DataGridView();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.button24 = new System.Windows.Forms.Button();
-            this.button29 = new System.Windows.Forms.Button();
-            this.dataGridView5 = new System.Windows.Forms.DataGridView();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
-            this.button31 = new System.Windows.Forms.Button();
-            this.button36 = new System.Windows.Forms.Button();
-            this.vinКодыBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.vin_кодыTableAdapter = new AutoParts.AutoPartsDataSetTableAdapters.Vin_кодыTableAdapter();
             this.vinКодDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.годDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.автомобилиBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.автомобилиTableAdapter = new AutoParts.AutoPartsDataSetTableAdapters.АвтомобилиTableAdapter();
+            this.vinКодыBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.label2 = new System.Windows.Forms.Label();
+            this.button7 = new System.Windows.Forms.Button();
+            this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.dataGridView2 = new System.Windows.Forms.DataGridView();
             this.названиеАвтоDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.модельАвтоDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.годВыпускаDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.объемДвигателяDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.vinКодDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.номерДеталиDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.аналогиBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.аналогиTableAdapter = new AutoParts.AutoPartsDataSetTableAdapters.АналогиTableAdapter();
+            this.автомобилиBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.button9 = new System.Windows.Forms.Button();
+            this.button15 = new System.Windows.Forms.Button();
+            this.tabPage4 = new System.Windows.Forms.TabPage();
+            this.dataGridView3 = new System.Windows.Forms.DataGridView();
             this.номерАналогаDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.наименованиеDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.заказчикBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.заказчикTableAdapter = new AutoParts.AutoPartsDataSetTableAdapters.ЗаказчикTableAdapter();
+            this.аналогиBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.button17 = new System.Windows.Forms.Button();
+            this.button22 = new System.Windows.Forms.Button();
+            this.tabPage5 = new System.Windows.Forms.TabPage();
+            this.dataGridView4 = new System.Windows.Forms.DataGridView();
             this.реквизитыDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.контактноеЛицоDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.счетаDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.телефонаDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.названиеАвтоDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.модельАвтоDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.запасныеЧастиBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.запасные_частиTableAdapter = new AutoParts.AutoPartsDataSetTableAdapters.Запасные_частиTableAdapter();
+            this.заказчикBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.button24 = new System.Windows.Forms.Button();
+            this.button29 = new System.Windows.Forms.Button();
+            this.tabPage6 = new System.Windows.Forms.TabPage();
+            this.dataGridView5 = new System.Windows.Forms.DataGridView();
             this.датаОтгрузкиDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.номерДеталиDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.местоПокупкиDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.закупочнаяЦенаDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ценаОтгрузкиDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.номерАналогаDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.запасныеЧастиBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.button31 = new System.Windows.Forms.Button();
+            this.button36 = new System.Windows.Forms.Button();
+            this.заказыTableAdapter = new AutoParts.AutoPartsDataSetTableAdapters.ЗаказыTableAdapter();
+            this.vin_кодыTableAdapter = new AutoParts.AutoPartsDataSetTableAdapters.Vin_кодыTableAdapter();
+            this.автомобилиTableAdapter = new AutoParts.AutoPartsDataSetTableAdapters.АвтомобилиTableAdapter();
+            this.аналогиTableAdapter = new AutoParts.AutoPartsDataSetTableAdapters.АналогиTableAdapter();
+            this.заказчикTableAdapter = new AutoParts.AutoPartsDataSetTableAdapters.ЗаказчикTableAdapter();
+            this.запасные_частиTableAdapter = new AutoParts.AutoPartsDataSetTableAdapters.Запасные_частиTableAdapter();
             this.tabControl.SuspendLayout();
             this.tabPage3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.заказыBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.autoPartsDataSet)).BeginInit();
             this.tabPage1.SuspendLayout();
-            this.tabPage2.SuspendLayout();
-            this.tabPage4.SuspendLayout();
-            this.tabPage5.SuspendLayout();
-            this.tabPage6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.vinКодыBindingSource)).BeginInit();
+            this.tabPage2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.автомобилиBindingSource)).BeginInit();
+            this.tabPage4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.аналогиBindingSource)).BeginInit();
+            this.tabPage5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.заказчикBindingSource)).BeginInit();
+            this.tabPage6.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.запасныеЧастиBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
@@ -358,19 +353,10 @@
             this.buttonAdd.UseVisualStyleBackColor = true;
             this.buttonAdd.Click += new System.EventHandler(this.buttonAdd_Click);
             // 
-            // заказыTableAdapter
-            // 
-            this.заказыTableAdapter.ClearBeforeFill = true;
-            // 
             // tabPage1
             // 
             this.tabPage1.Controls.Add(this.dataGridView1);
-            this.tabPage1.Controls.Add(this.textBox1);
-            this.tabPage1.Controls.Add(this.label1);
             this.tabPage1.Controls.Add(this.label2);
-            this.tabPage1.Controls.Add(this.button2);
-            this.tabPage1.Controls.Add(this.button5);
-            this.tabPage1.Controls.Add(this.button6);
             this.tabPage1.Controls.Add(this.button7);
             this.tabPage1.Location = new System.Drawing.Point(4, 25);
             this.tabPage1.Name = "tabPage1";
@@ -378,6 +364,66 @@
             this.tabPage1.TabIndex = 3;
             this.tabPage1.Text = "Vin коды";
             this.tabPage1.UseVisualStyleBackColor = true;
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.dataGridView1.AutoGenerateColumns = false;
+            this.dataGridView1.BackgroundColor = System.Drawing.Color.White;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.vinКодDataGridViewTextBoxColumn,
+            this.годDataGridViewTextBoxColumn});
+            this.dataGridView1.DataSource = this.vinКодыBindingSource;
+            this.dataGridView1.Location = new System.Drawing.Point(11, 66);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowTemplate.Height = 24;
+            this.dataGridView1.Size = new System.Drawing.Size(1736, 751);
+            this.dataGridView1.TabIndex = 27;
+            // 
+            // vinКодDataGridViewTextBoxColumn
+            // 
+            this.vinКодDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.vinКодDataGridViewTextBoxColumn.DataPropertyName = "Vin код";
+            this.vinКодDataGridViewTextBoxColumn.HeaderText = "Vin код";
+            this.vinКодDataGridViewTextBoxColumn.Name = "vinКодDataGridViewTextBoxColumn";
+            this.vinКодDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // годDataGridViewTextBoxColumn
+            // 
+            this.годDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.годDataGridViewTextBoxColumn.DataPropertyName = "Год";
+            this.годDataGridViewTextBoxColumn.HeaderText = "Год";
+            this.годDataGridViewTextBoxColumn.Name = "годDataGridViewTextBoxColumn";
+            this.годDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // vinКодыBindingSource
+            // 
+            this.vinКодыBindingSource.DataMember = "Vin коды";
+            this.vinКодыBindingSource.DataSource = this.autoPartsDataSet;
+            // 
+            // label2
+            // 
+            this.label2.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label2.Location = new System.Drawing.Point(814, 6);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(88, 21);
+            this.label2.TabIndex = 24;
+            this.label2.Text = "Vin коды";
+            // 
+            // button7
+            // 
+            this.button7.Location = new System.Drawing.Point(8, 30);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(109, 30);
+            this.button7.TabIndex = 22;
+            this.button7.Text = "Добавить";
+            this.button7.UseVisualStyleBackColor = true;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
             // tabPage2
             // 
@@ -393,140 +439,6 @@
             this.tabPage2.TabIndex = 4;
             this.tabPage2.Text = "Автомобили";
             this.tabPage2.UseVisualStyleBackColor = true;
-            // 
-            // tabPage4
-            // 
-            this.tabPage4.Controls.Add(this.dataGridView3);
-            this.tabPage4.Controls.Add(this.textBox4);
-            this.tabPage4.Controls.Add(this.label7);
-            this.tabPage4.Controls.Add(this.label8);
-            this.tabPage4.Controls.Add(this.button17);
-            this.tabPage4.Controls.Add(this.button22);
-            this.tabPage4.Location = new System.Drawing.Point(4, 25);
-            this.tabPage4.Name = "tabPage4";
-            this.tabPage4.Size = new System.Drawing.Size(1752, 823);
-            this.tabPage4.TabIndex = 5;
-            this.tabPage4.Text = "Аналоги";
-            this.tabPage4.UseVisualStyleBackColor = true;
-            // 
-            // tabPage5
-            // 
-            this.tabPage5.Controls.Add(this.dataGridView4);
-            this.tabPage5.Controls.Add(this.textBox5);
-            this.tabPage5.Controls.Add(this.label9);
-            this.tabPage5.Controls.Add(this.label10);
-            this.tabPage5.Controls.Add(this.button24);
-            this.tabPage5.Controls.Add(this.button29);
-            this.tabPage5.Location = new System.Drawing.Point(4, 25);
-            this.tabPage5.Name = "tabPage5";
-            this.tabPage5.Size = new System.Drawing.Size(1752, 823);
-            this.tabPage5.TabIndex = 6;
-            this.tabPage5.Text = "Заказчик";
-            this.tabPage5.UseVisualStyleBackColor = true;
-            // 
-            // tabPage6
-            // 
-            this.tabPage6.Controls.Add(this.dataGridView5);
-            this.tabPage6.Controls.Add(this.textBox6);
-            this.tabPage6.Controls.Add(this.label11);
-            this.tabPage6.Controls.Add(this.label12);
-            this.tabPage6.Controls.Add(this.button31);
-            this.tabPage6.Controls.Add(this.button36);
-            this.tabPage6.Location = new System.Drawing.Point(4, 25);
-            this.tabPage6.Name = "tabPage6";
-            this.tabPage6.Size = new System.Drawing.Size(1752, 823);
-            this.tabPage6.TabIndex = 7;
-            this.tabPage6.Text = "Запасные части";
-            this.tabPage6.UseVisualStyleBackColor = true;
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.dataGridView1.AutoGenerateColumns = false;
-            this.dataGridView1.BackgroundColor = System.Drawing.Color.White;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.vinКодDataGridViewTextBoxColumn,
-            this.годDataGridViewTextBoxColumn});
-            this.dataGridView1.DataSource = this.vinКодыBindingSource;
-            this.dataGridView1.Location = new System.Drawing.Point(11, 108);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(1736, 709);
-            this.dataGridView1.TabIndex = 27;
-            // 
-            // textBox1
-            // 
-            this.textBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox1.Location = new System.Drawing.Point(76, 72);
-            this.textBox1.MaxLength = 30;
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(1633, 30);
-            this.textBox1.TabIndex = 25;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label1.Location = new System.Drawing.Point(6, 73);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(64, 21);
-            this.label1.TabIndex = 23;
-            this.label1.Text = "Поиск";
-            // 
-            // label2
-            // 
-            this.label2.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label2.Location = new System.Drawing.Point(814, 6);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(88, 21);
-            this.label2.TabIndex = 24;
-            this.label2.Text = "Vin коды";
-            // 
-            // button2
-            // 
-            this.button2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.button2.Image = global::AutoParts.Properties.Resources.кнопка_3;
-            this.button2.Location = new System.Drawing.Point(1715, 72);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(32, 30);
-            this.button2.TabIndex = 17;
-            this.button2.UseVisualStyleBackColor = true;
-            // 
-            // button5
-            // 
-            this.button5.Location = new System.Drawing.Point(123, 30);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(102, 30);
-            this.button5.TabIndex = 20;
-            this.button5.Text = "Сохранить";
-            this.button5.UseVisualStyleBackColor = true;
-            this.button5.Visible = false;
-            // 
-            // button6
-            // 
-            this.button6.Location = new System.Drawing.Point(231, 30);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(107, 30);
-            this.button6.TabIndex = 21;
-            this.button6.Text = "Удалить";
-            this.button6.UseVisualStyleBackColor = true;
-            this.button6.Visible = false;
-            // 
-            // button7
-            // 
-            this.button7.Location = new System.Drawing.Point(8, 30);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(109, 30);
-            this.button7.TabIndex = 22;
-            this.button7.Text = "Добавить";
-            this.button7.UseVisualStyleBackColor = true;
             // 
             // dataGridView2
             // 
@@ -549,6 +461,59 @@
             this.dataGridView2.RowTemplate.Height = 24;
             this.dataGridView2.Size = new System.Drawing.Size(1736, 709);
             this.dataGridView2.TabIndex = 27;
+            // 
+            // названиеАвтоDataGridViewTextBoxColumn
+            // 
+            this.названиеАвтоDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.названиеАвтоDataGridViewTextBoxColumn.DataPropertyName = "Название авто";
+            this.названиеАвтоDataGridViewTextBoxColumn.HeaderText = "Название авто";
+            this.названиеАвтоDataGridViewTextBoxColumn.Name = "названиеАвтоDataGridViewTextBoxColumn";
+            this.названиеАвтоDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // модельАвтоDataGridViewTextBoxColumn
+            // 
+            this.модельАвтоDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.модельАвтоDataGridViewTextBoxColumn.DataPropertyName = "Модель авто";
+            this.модельАвтоDataGridViewTextBoxColumn.HeaderText = "Модель авто";
+            this.модельАвтоDataGridViewTextBoxColumn.Name = "модельАвтоDataGridViewTextBoxColumn";
+            this.модельАвтоDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // годВыпускаDataGridViewTextBoxColumn
+            // 
+            this.годВыпускаDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.годВыпускаDataGridViewTextBoxColumn.DataPropertyName = "Год выпуска";
+            this.годВыпускаDataGridViewTextBoxColumn.HeaderText = "Год выпуска";
+            this.годВыпускаDataGridViewTextBoxColumn.Name = "годВыпускаDataGridViewTextBoxColumn";
+            this.годВыпускаDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // объемДвигателяDataGridViewTextBoxColumn
+            // 
+            this.объемДвигателяDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.объемДвигателяDataGridViewTextBoxColumn.DataPropertyName = "Объем двигателя";
+            this.объемДвигателяDataGridViewTextBoxColumn.HeaderText = "Объем двигателя";
+            this.объемДвигателяDataGridViewTextBoxColumn.Name = "объемДвигателяDataGridViewTextBoxColumn";
+            this.объемДвигателяDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // vinКодDataGridViewTextBoxColumn1
+            // 
+            this.vinКодDataGridViewTextBoxColumn1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.vinКодDataGridViewTextBoxColumn1.DataPropertyName = "Vin код";
+            this.vinКодDataGridViewTextBoxColumn1.HeaderText = "Vin код";
+            this.vinКодDataGridViewTextBoxColumn1.Name = "vinКодDataGridViewTextBoxColumn1";
+            this.vinКодDataGridViewTextBoxColumn1.ReadOnly = true;
+            // 
+            // номерДеталиDataGridViewTextBoxColumn
+            // 
+            this.номерДеталиDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.номерДеталиDataGridViewTextBoxColumn.DataPropertyName = "Номер детали";
+            this.номерДеталиDataGridViewTextBoxColumn.HeaderText = "Номер детали";
+            this.номерДеталиDataGridViewTextBoxColumn.Name = "номерДеталиDataGridViewTextBoxColumn";
+            this.номерДеталиDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // автомобилиBindingSource
+            // 
+            this.автомобилиBindingSource.DataMember = "Автомобили";
+            this.автомобилиBindingSource.DataSource = this.autoPartsDataSet;
             // 
             // textBox2
             // 
@@ -601,6 +566,21 @@
             this.button15.Text = "Добавить";
             this.button15.UseVisualStyleBackColor = true;
             // 
+            // tabPage4
+            // 
+            this.tabPage4.Controls.Add(this.dataGridView3);
+            this.tabPage4.Controls.Add(this.textBox4);
+            this.tabPage4.Controls.Add(this.label7);
+            this.tabPage4.Controls.Add(this.label8);
+            this.tabPage4.Controls.Add(this.button17);
+            this.tabPage4.Controls.Add(this.button22);
+            this.tabPage4.Location = new System.Drawing.Point(4, 25);
+            this.tabPage4.Name = "tabPage4";
+            this.tabPage4.Size = new System.Drawing.Size(1752, 823);
+            this.tabPage4.TabIndex = 5;
+            this.tabPage4.Text = "Аналоги";
+            this.tabPage4.UseVisualStyleBackColor = true;
+            // 
             // dataGridView3
             // 
             this.dataGridView3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -618,6 +598,27 @@
             this.dataGridView3.RowTemplate.Height = 24;
             this.dataGridView3.Size = new System.Drawing.Size(1736, 709);
             this.dataGridView3.TabIndex = 27;
+            // 
+            // номерАналогаDataGridViewTextBoxColumn
+            // 
+            this.номерАналогаDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.номерАналогаDataGridViewTextBoxColumn.DataPropertyName = "Номер аналога";
+            this.номерАналогаDataGridViewTextBoxColumn.HeaderText = "Номер аналога";
+            this.номерАналогаDataGridViewTextBoxColumn.Name = "номерАналогаDataGridViewTextBoxColumn";
+            this.номерАналогаDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // наименованиеDataGridViewTextBoxColumn
+            // 
+            this.наименованиеDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.наименованиеDataGridViewTextBoxColumn.DataPropertyName = "Наименование";
+            this.наименованиеDataGridViewTextBoxColumn.HeaderText = "Наименование";
+            this.наименованиеDataGridViewTextBoxColumn.Name = "наименованиеDataGridViewTextBoxColumn";
+            this.наименованиеDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // аналогиBindingSource
+            // 
+            this.аналогиBindingSource.DataMember = "Аналоги";
+            this.аналогиBindingSource.DataSource = this.autoPartsDataSet;
             // 
             // textBox4
             // 
@@ -670,6 +671,21 @@
             this.button22.Text = "Добавить";
             this.button22.UseVisualStyleBackColor = true;
             // 
+            // tabPage5
+            // 
+            this.tabPage5.Controls.Add(this.dataGridView4);
+            this.tabPage5.Controls.Add(this.textBox5);
+            this.tabPage5.Controls.Add(this.label9);
+            this.tabPage5.Controls.Add(this.label10);
+            this.tabPage5.Controls.Add(this.button24);
+            this.tabPage5.Controls.Add(this.button29);
+            this.tabPage5.Location = new System.Drawing.Point(4, 25);
+            this.tabPage5.Name = "tabPage5";
+            this.tabPage5.Size = new System.Drawing.Size(1752, 823);
+            this.tabPage5.TabIndex = 6;
+            this.tabPage5.Text = "Заказчик";
+            this.tabPage5.UseVisualStyleBackColor = true;
+            // 
             // dataGridView4
             // 
             this.dataGridView4.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -691,6 +707,59 @@
             this.dataGridView4.RowTemplate.Height = 24;
             this.dataGridView4.Size = new System.Drawing.Size(1736, 709);
             this.dataGridView4.TabIndex = 27;
+            // 
+            // реквизитыDataGridViewTextBoxColumn
+            // 
+            this.реквизитыDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.реквизитыDataGridViewTextBoxColumn.DataPropertyName = "Реквизиты";
+            this.реквизитыDataGridViewTextBoxColumn.HeaderText = "Реквизиты";
+            this.реквизитыDataGridViewTextBoxColumn.Name = "реквизитыDataGridViewTextBoxColumn";
+            this.реквизитыDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // контактноеЛицоDataGridViewTextBoxColumn
+            // 
+            this.контактноеЛицоDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.контактноеЛицоDataGridViewTextBoxColumn.DataPropertyName = "Контактное лицо";
+            this.контактноеЛицоDataGridViewTextBoxColumn.HeaderText = "Контактное лицо";
+            this.контактноеЛицоDataGridViewTextBoxColumn.Name = "контактноеЛицоDataGridViewTextBoxColumn";
+            this.контактноеЛицоDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // счетаDataGridViewTextBoxColumn1
+            // 
+            this.счетаDataGridViewTextBoxColumn1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.счетаDataGridViewTextBoxColumn1.DataPropertyName = "№ счета";
+            this.счетаDataGridViewTextBoxColumn1.HeaderText = "№ счета";
+            this.счетаDataGridViewTextBoxColumn1.Name = "счетаDataGridViewTextBoxColumn1";
+            this.счетаDataGridViewTextBoxColumn1.ReadOnly = true;
+            // 
+            // телефонаDataGridViewTextBoxColumn
+            // 
+            this.телефонаDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.телефонаDataGridViewTextBoxColumn.DataPropertyName = "№ телефона";
+            this.телефонаDataGridViewTextBoxColumn.HeaderText = "№ телефона";
+            this.телефонаDataGridViewTextBoxColumn.Name = "телефонаDataGridViewTextBoxColumn";
+            this.телефонаDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // названиеАвтоDataGridViewTextBoxColumn1
+            // 
+            this.названиеАвтоDataGridViewTextBoxColumn1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.названиеАвтоDataGridViewTextBoxColumn1.DataPropertyName = "Название авто";
+            this.названиеАвтоDataGridViewTextBoxColumn1.HeaderText = "Название авто";
+            this.названиеАвтоDataGridViewTextBoxColumn1.Name = "названиеАвтоDataGridViewTextBoxColumn1";
+            this.названиеАвтоDataGridViewTextBoxColumn1.ReadOnly = true;
+            // 
+            // модельАвтоDataGridViewTextBoxColumn1
+            // 
+            this.модельАвтоDataGridViewTextBoxColumn1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.модельАвтоDataGridViewTextBoxColumn1.DataPropertyName = "Модель авто";
+            this.модельАвтоDataGridViewTextBoxColumn1.HeaderText = "Модель авто";
+            this.модельАвтоDataGridViewTextBoxColumn1.Name = "модельАвтоDataGridViewTextBoxColumn1";
+            this.модельАвтоDataGridViewTextBoxColumn1.ReadOnly = true;
+            // 
+            // заказчикBindingSource
+            // 
+            this.заказчикBindingSource.DataMember = "Заказчик";
+            this.заказчикBindingSource.DataSource = this.autoPartsDataSet;
             // 
             // textBox5
             // 
@@ -743,6 +812,21 @@
             this.button29.Text = "Добавить";
             this.button29.UseVisualStyleBackColor = true;
             // 
+            // tabPage6
+            // 
+            this.tabPage6.Controls.Add(this.dataGridView5);
+            this.tabPage6.Controls.Add(this.textBox6);
+            this.tabPage6.Controls.Add(this.label11);
+            this.tabPage6.Controls.Add(this.label12);
+            this.tabPage6.Controls.Add(this.button31);
+            this.tabPage6.Controls.Add(this.button36);
+            this.tabPage6.Location = new System.Drawing.Point(4, 25);
+            this.tabPage6.Name = "tabPage6";
+            this.tabPage6.Size = new System.Drawing.Size(1752, 823);
+            this.tabPage6.TabIndex = 7;
+            this.tabPage6.Text = "Запасные части";
+            this.tabPage6.UseVisualStyleBackColor = true;
+            // 
             // dataGridView5
             // 
             this.dataGridView5.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -764,6 +848,59 @@
             this.dataGridView5.RowTemplate.Height = 24;
             this.dataGridView5.Size = new System.Drawing.Size(1736, 709);
             this.dataGridView5.TabIndex = 27;
+            // 
+            // датаОтгрузкиDataGridViewTextBoxColumn
+            // 
+            this.датаОтгрузкиDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.датаОтгрузкиDataGridViewTextBoxColumn.DataPropertyName = "Дата отгрузки";
+            this.датаОтгрузкиDataGridViewTextBoxColumn.HeaderText = "Дата отгрузки";
+            this.датаОтгрузкиDataGridViewTextBoxColumn.Name = "датаОтгрузкиDataGridViewTextBoxColumn";
+            this.датаОтгрузкиDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // номерДеталиDataGridViewTextBoxColumn1
+            // 
+            this.номерДеталиDataGridViewTextBoxColumn1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.номерДеталиDataGridViewTextBoxColumn1.DataPropertyName = "Номер детали";
+            this.номерДеталиDataGridViewTextBoxColumn1.HeaderText = "Номер детали";
+            this.номерДеталиDataGridViewTextBoxColumn1.Name = "номерДеталиDataGridViewTextBoxColumn1";
+            this.номерДеталиDataGridViewTextBoxColumn1.ReadOnly = true;
+            // 
+            // местоПокупкиDataGridViewTextBoxColumn
+            // 
+            this.местоПокупкиDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.местоПокупкиDataGridViewTextBoxColumn.DataPropertyName = "Место покупки";
+            this.местоПокупкиDataGridViewTextBoxColumn.HeaderText = "Место покупки";
+            this.местоПокупкиDataGridViewTextBoxColumn.Name = "местоПокупкиDataGridViewTextBoxColumn";
+            this.местоПокупкиDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // закупочнаяЦенаDataGridViewTextBoxColumn
+            // 
+            this.закупочнаяЦенаDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.закупочнаяЦенаDataGridViewTextBoxColumn.DataPropertyName = "Закупочная цена";
+            this.закупочнаяЦенаDataGridViewTextBoxColumn.HeaderText = "Закупочная цена";
+            this.закупочнаяЦенаDataGridViewTextBoxColumn.Name = "закупочнаяЦенаDataGridViewTextBoxColumn";
+            this.закупочнаяЦенаDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // ценаОтгрузкиDataGridViewTextBoxColumn
+            // 
+            this.ценаОтгрузкиDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.ценаОтгрузкиDataGridViewTextBoxColumn.DataPropertyName = "Цена отгрузки";
+            this.ценаОтгрузкиDataGridViewTextBoxColumn.HeaderText = "Цена отгрузки";
+            this.ценаОтгрузкиDataGridViewTextBoxColumn.Name = "ценаОтгрузкиDataGridViewTextBoxColumn";
+            this.ценаОтгрузкиDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // номерАналогаDataGridViewTextBoxColumn1
+            // 
+            this.номерАналогаDataGridViewTextBoxColumn1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.номерАналогаDataGridViewTextBoxColumn1.DataPropertyName = "Номер аналога";
+            this.номерАналогаDataGridViewTextBoxColumn1.HeaderText = "Номер аналога";
+            this.номерАналогаDataGridViewTextBoxColumn1.Name = "номерАналогаDataGridViewTextBoxColumn1";
+            this.номерАналогаDataGridViewTextBoxColumn1.ReadOnly = true;
+            // 
+            // запасныеЧастиBindingSource
+            // 
+            this.запасныеЧастиBindingSource.DataMember = "Запасные части";
+            this.запасныеЧастиBindingSource.DataSource = this.autoPartsDataSet;
             // 
             // textBox6
             // 
@@ -816,226 +953,29 @@
             this.button36.Text = "Добавить";
             this.button36.UseVisualStyleBackColor = true;
             // 
-            // vinКодыBindingSource
+            // заказыTableAdapter
             // 
-            this.vinКодыBindingSource.DataMember = "Vin коды";
-            this.vinКодыBindingSource.DataSource = this.autoPartsDataSet;
+            this.заказыTableAdapter.ClearBeforeFill = true;
             // 
             // vin_кодыTableAdapter
             // 
             this.vin_кодыTableAdapter.ClearBeforeFill = true;
             // 
-            // vinКодDataGridViewTextBoxColumn
-            // 
-            this.vinКодDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.vinКодDataGridViewTextBoxColumn.DataPropertyName = "Vin код";
-            this.vinКодDataGridViewTextBoxColumn.HeaderText = "Vin код";
-            this.vinКодDataGridViewTextBoxColumn.Name = "vinКодDataGridViewTextBoxColumn";
-            this.vinКодDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // годDataGridViewTextBoxColumn
-            // 
-            this.годDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.годDataGridViewTextBoxColumn.DataPropertyName = "Год";
-            this.годDataGridViewTextBoxColumn.HeaderText = "Год";
-            this.годDataGridViewTextBoxColumn.Name = "годDataGridViewTextBoxColumn";
-            this.годDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // автомобилиBindingSource
-            // 
-            this.автомобилиBindingSource.DataMember = "Автомобили";
-            this.автомобилиBindingSource.DataSource = this.autoPartsDataSet;
-            // 
             // автомобилиTableAdapter
             // 
             this.автомобилиTableAdapter.ClearBeforeFill = true;
-            // 
-            // названиеАвтоDataGridViewTextBoxColumn
-            // 
-            this.названиеАвтоDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.названиеАвтоDataGridViewTextBoxColumn.DataPropertyName = "Название авто";
-            this.названиеАвтоDataGridViewTextBoxColumn.HeaderText = "Название авто";
-            this.названиеАвтоDataGridViewTextBoxColumn.Name = "названиеАвтоDataGridViewTextBoxColumn";
-            this.названиеАвтоDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // модельАвтоDataGridViewTextBoxColumn
-            // 
-            this.модельАвтоDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.модельАвтоDataGridViewTextBoxColumn.DataPropertyName = "Модель авто";
-            this.модельАвтоDataGridViewTextBoxColumn.HeaderText = "Модель авто";
-            this.модельАвтоDataGridViewTextBoxColumn.Name = "модельАвтоDataGridViewTextBoxColumn";
-            this.модельАвтоDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // годВыпускаDataGridViewTextBoxColumn
-            // 
-            this.годВыпускаDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.годВыпускаDataGridViewTextBoxColumn.DataPropertyName = "Год выпуска";
-            this.годВыпускаDataGridViewTextBoxColumn.HeaderText = "Год выпуска";
-            this.годВыпускаDataGridViewTextBoxColumn.Name = "годВыпускаDataGridViewTextBoxColumn";
-            this.годВыпускаDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // объемДвигателяDataGridViewTextBoxColumn
-            // 
-            this.объемДвигателяDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.объемДвигателяDataGridViewTextBoxColumn.DataPropertyName = "Объем двигателя";
-            this.объемДвигателяDataGridViewTextBoxColumn.HeaderText = "Объем двигателя";
-            this.объемДвигателяDataGridViewTextBoxColumn.Name = "объемДвигателяDataGridViewTextBoxColumn";
-            this.объемДвигателяDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // vinКодDataGridViewTextBoxColumn1
-            // 
-            this.vinКодDataGridViewTextBoxColumn1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.vinКодDataGridViewTextBoxColumn1.DataPropertyName = "Vin код";
-            this.vinКодDataGridViewTextBoxColumn1.HeaderText = "Vin код";
-            this.vinКодDataGridViewTextBoxColumn1.Name = "vinКодDataGridViewTextBoxColumn1";
-            this.vinКодDataGridViewTextBoxColumn1.ReadOnly = true;
-            // 
-            // номерДеталиDataGridViewTextBoxColumn
-            // 
-            this.номерДеталиDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.номерДеталиDataGridViewTextBoxColumn.DataPropertyName = "Номер детали";
-            this.номерДеталиDataGridViewTextBoxColumn.HeaderText = "Номер детали";
-            this.номерДеталиDataGridViewTextBoxColumn.Name = "номерДеталиDataGridViewTextBoxColumn";
-            this.номерДеталиDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // аналогиBindingSource
-            // 
-            this.аналогиBindingSource.DataMember = "Аналоги";
-            this.аналогиBindingSource.DataSource = this.autoPartsDataSet;
             // 
             // аналогиTableAdapter
             // 
             this.аналогиTableAdapter.ClearBeforeFill = true;
             // 
-            // номерАналогаDataGridViewTextBoxColumn
-            // 
-            this.номерАналогаDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.номерАналогаDataGridViewTextBoxColumn.DataPropertyName = "Номер аналога";
-            this.номерАналогаDataGridViewTextBoxColumn.HeaderText = "Номер аналога";
-            this.номерАналогаDataGridViewTextBoxColumn.Name = "номерАналогаDataGridViewTextBoxColumn";
-            this.номерАналогаDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // наименованиеDataGridViewTextBoxColumn
-            // 
-            this.наименованиеDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.наименованиеDataGridViewTextBoxColumn.DataPropertyName = "Наименование";
-            this.наименованиеDataGridViewTextBoxColumn.HeaderText = "Наименование";
-            this.наименованиеDataGridViewTextBoxColumn.Name = "наименованиеDataGridViewTextBoxColumn";
-            this.наименованиеDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // заказчикBindingSource
-            // 
-            this.заказчикBindingSource.DataMember = "Заказчик";
-            this.заказчикBindingSource.DataSource = this.autoPartsDataSet;
-            // 
             // заказчикTableAdapter
             // 
             this.заказчикTableAdapter.ClearBeforeFill = true;
             // 
-            // реквизитыDataGridViewTextBoxColumn
-            // 
-            this.реквизитыDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.реквизитыDataGridViewTextBoxColumn.DataPropertyName = "Реквизиты";
-            this.реквизитыDataGridViewTextBoxColumn.HeaderText = "Реквизиты";
-            this.реквизитыDataGridViewTextBoxColumn.Name = "реквизитыDataGridViewTextBoxColumn";
-            this.реквизитыDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // контактноеЛицоDataGridViewTextBoxColumn
-            // 
-            this.контактноеЛицоDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.контактноеЛицоDataGridViewTextBoxColumn.DataPropertyName = "Контактное лицо";
-            this.контактноеЛицоDataGridViewTextBoxColumn.HeaderText = "Контактное лицо";
-            this.контактноеЛицоDataGridViewTextBoxColumn.Name = "контактноеЛицоDataGridViewTextBoxColumn";
-            this.контактноеЛицоDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // счетаDataGridViewTextBoxColumn1
-            // 
-            this.счетаDataGridViewTextBoxColumn1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.счетаDataGridViewTextBoxColumn1.DataPropertyName = "№ счета";
-            this.счетаDataGridViewTextBoxColumn1.HeaderText = "№ счета";
-            this.счетаDataGridViewTextBoxColumn1.Name = "счетаDataGridViewTextBoxColumn1";
-            this.счетаDataGridViewTextBoxColumn1.ReadOnly = true;
-            // 
-            // телефонаDataGridViewTextBoxColumn
-            // 
-            this.телефонаDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.телефонаDataGridViewTextBoxColumn.DataPropertyName = "№ телефона";
-            this.телефонаDataGridViewTextBoxColumn.HeaderText = "№ телефона";
-            this.телефонаDataGridViewTextBoxColumn.Name = "телефонаDataGridViewTextBoxColumn";
-            this.телефонаDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // названиеАвтоDataGridViewTextBoxColumn1
-            // 
-            this.названиеАвтоDataGridViewTextBoxColumn1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.названиеАвтоDataGridViewTextBoxColumn1.DataPropertyName = "Название авто";
-            this.названиеАвтоDataGridViewTextBoxColumn1.HeaderText = "Название авто";
-            this.названиеАвтоDataGridViewTextBoxColumn1.Name = "названиеАвтоDataGridViewTextBoxColumn1";
-            this.названиеАвтоDataGridViewTextBoxColumn1.ReadOnly = true;
-            // 
-            // модельАвтоDataGridViewTextBoxColumn1
-            // 
-            this.модельАвтоDataGridViewTextBoxColumn1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.модельАвтоDataGridViewTextBoxColumn1.DataPropertyName = "Модель авто";
-            this.модельАвтоDataGridViewTextBoxColumn1.HeaderText = "Модель авто";
-            this.модельАвтоDataGridViewTextBoxColumn1.Name = "модельАвтоDataGridViewTextBoxColumn1";
-            this.модельАвтоDataGridViewTextBoxColumn1.ReadOnly = true;
-            // 
-            // запасныеЧастиBindingSource
-            // 
-            this.запасныеЧастиBindingSource.DataMember = "Запасные части";
-            this.запасныеЧастиBindingSource.DataSource = this.autoPartsDataSet;
-            // 
             // запасные_частиTableAdapter
             // 
             this.запасные_частиTableAdapter.ClearBeforeFill = true;
-            // 
-            // датаОтгрузкиDataGridViewTextBoxColumn
-            // 
-            this.датаОтгрузкиDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.датаОтгрузкиDataGridViewTextBoxColumn.DataPropertyName = "Дата отгрузки";
-            this.датаОтгрузкиDataGridViewTextBoxColumn.HeaderText = "Дата отгрузки";
-            this.датаОтгрузкиDataGridViewTextBoxColumn.Name = "датаОтгрузкиDataGridViewTextBoxColumn";
-            this.датаОтгрузкиDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // номерДеталиDataGridViewTextBoxColumn1
-            // 
-            this.номерДеталиDataGridViewTextBoxColumn1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.номерДеталиDataGridViewTextBoxColumn1.DataPropertyName = "Номер детали";
-            this.номерДеталиDataGridViewTextBoxColumn1.HeaderText = "Номер детали";
-            this.номерДеталиDataGridViewTextBoxColumn1.Name = "номерДеталиDataGridViewTextBoxColumn1";
-            this.номерДеталиDataGridViewTextBoxColumn1.ReadOnly = true;
-            // 
-            // местоПокупкиDataGridViewTextBoxColumn
-            // 
-            this.местоПокупкиDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.местоПокупкиDataGridViewTextBoxColumn.DataPropertyName = "Место покупки";
-            this.местоПокупкиDataGridViewTextBoxColumn.HeaderText = "Место покупки";
-            this.местоПокупкиDataGridViewTextBoxColumn.Name = "местоПокупкиDataGridViewTextBoxColumn";
-            this.местоПокупкиDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // закупочнаяЦенаDataGridViewTextBoxColumn
-            // 
-            this.закупочнаяЦенаDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.закупочнаяЦенаDataGridViewTextBoxColumn.DataPropertyName = "Закупочная цена";
-            this.закупочнаяЦенаDataGridViewTextBoxColumn.HeaderText = "Закупочная цена";
-            this.закупочнаяЦенаDataGridViewTextBoxColumn.Name = "закупочнаяЦенаDataGridViewTextBoxColumn";
-            this.закупочнаяЦенаDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // ценаОтгрузкиDataGridViewTextBoxColumn
-            // 
-            this.ценаОтгрузкиDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.ценаОтгрузкиDataGridViewTextBoxColumn.DataPropertyName = "Цена отгрузки";
-            this.ценаОтгрузкиDataGridViewTextBoxColumn.HeaderText = "Цена отгрузки";
-            this.ценаОтгрузкиDataGridViewTextBoxColumn.Name = "ценаОтгрузкиDataGridViewTextBoxColumn";
-            this.ценаОтгрузкиDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // номерАналогаDataGridViewTextBoxColumn1
-            // 
-            this.номерАналогаDataGridViewTextBoxColumn1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.номерАналогаDataGridViewTextBoxColumn1.DataPropertyName = "Номер аналога";
-            this.номерАналогаDataGridViewTextBoxColumn1.HeaderText = "Номер аналога";
-            this.номерАналогаDataGridViewTextBoxColumn1.Name = "номерАналогаDataGridViewTextBoxColumn1";
-            this.номерАналогаDataGridViewTextBoxColumn1.ReadOnly = true;
             // 
             // Объекты
             // 
@@ -1059,23 +999,23 @@
             ((System.ComponentModel.ISupportInitialize)(this.autoPartsDataSet)).EndInit();
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.vinКодыBindingSource)).EndInit();
             this.tabPage2.ResumeLayout(false);
             this.tabPage2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.автомобилиBindingSource)).EndInit();
             this.tabPage4.ResumeLayout(false);
             this.tabPage4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.аналогиBindingSource)).EndInit();
             this.tabPage5.ResumeLayout(false);
             this.tabPage5.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.заказчикBindingSource)).EndInit();
             this.tabPage6.ResumeLayout(false);
             this.tabPage6.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.vinКодыBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.автомобилиBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.аналогиBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.заказчикBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.запасныеЧастиBindingSource)).EndInit();
             this.ResumeLayout(false);
 
@@ -1106,12 +1046,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn всегоПоСчетуDataGridViewTextBoxColumn;
         private System.Windows.Forms.TabPage tabPage1;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.TabPage tabPage2;
         private System.Windows.Forms.DataGridView dataGridView2;

@@ -74,6 +74,9 @@
     <Compile Include="Объекты\Объекты.Designer.cs">
       <DependentUpon>Объекты.cs</DependentUpon>
     </Compile>
+    <Compile Include="Объекты\Объекты.Vin_коды.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Объекты\Объекты.Общее.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -128,6 +131,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Объекты\Объекты.resx">
       <DependentUpon>Объекты.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Формы\Vin коды.resx">
+      <DependentUpon>Vin коды.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Формы\Заказы.resx">
       <DependentUpon>Заказы.cs</DependentUpon>
