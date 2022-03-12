@@ -920,6 +920,7 @@
             this.textBox6.Name = "textBox6";
             this.textBox6.Size = new System.Drawing.Size(1633, 30);
             this.textBox6.TabIndex = 25;
+            this.textBox6.TextChanged += new System.EventHandler(this.textBox6_TextChanged);
             // 
             // label11
             // 
@@ -950,6 +951,7 @@
             this.button36.TabIndex = 22;
             this.button36.Text = "Добавить";
             this.button36.UseVisualStyleBackColor = true;
+            this.button36.Click += new System.EventHandler(this.button36_Click);
             // 
             // button31
             // 

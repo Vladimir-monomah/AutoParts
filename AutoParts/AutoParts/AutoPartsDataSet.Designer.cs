@@ -36,14 +36,6 @@ namespace AutoParts {
         
         private Запасные_частиDataTable tableЗапасные_части;
         
-        private global::System.Data.DataRelation relationЗаказчикАвтомобили;
-        
-        private global::System.Data.DataRelation relationЗапасные_частиАвтомобили;
-        
-        private global::System.Data.DataRelation relationЗаказыЗаказчик;
-        
-        private global::System.Data.DataRelation relationАналогиЗапасные_части;
-        
         private global::System.Data.SchemaSerializationMode _schemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -322,10 +314,6 @@ namespace AutoParts {
                     this.tableЗапасные_части.InitVars();
                 }
             }
-            this.relationЗаказчикАвтомобили = this.Relations["ЗаказчикАвтомобили"];
-            this.relationЗапасные_частиАвтомобили = this.Relations["Запасные частиАвтомобили"];
-            this.relationЗаказыЗаказчик = this.Relations["ЗаказыЗаказчик"];
-            this.relationАналогиЗапасные_части = this.Relations["АналогиЗапасные части"];
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -348,22 +336,6 @@ namespace AutoParts {
             base.Tables.Add(this.tableЗаказы);
             this.tableЗапасные_части = new Запасные_частиDataTable();
             base.Tables.Add(this.tableЗапасные_части);
-            this.relationЗаказчикАвтомобили = new global::System.Data.DataRelation("ЗаказчикАвтомобили", new global::System.Data.DataColumn[] {
-                        this.tableЗаказчик.___п_пColumn}, new global::System.Data.DataColumn[] {
-                        this.tableАвтомобили.Id_автоColumn}, false);
-            this.Relations.Add(this.relationЗаказчикАвтомобили);
-            this.relationЗапасные_частиАвтомобили = new global::System.Data.DataRelation("Запасные частиАвтомобили", new global::System.Data.DataColumn[] {
-                        this.tableЗапасные_части.IdColumn}, new global::System.Data.DataColumn[] {
-                        this.tableАвтомобили.Id_автоColumn}, false);
-            this.Relations.Add(this.relationЗапасные_частиАвтомобили);
-            this.relationЗаказыЗаказчик = new global::System.Data.DataRelation("ЗаказыЗаказчик", new global::System.Data.DataColumn[] {
-                        this.tableЗаказы.Id_заказаColumn}, new global::System.Data.DataColumn[] {
-                        this.tableЗаказчик.___п_пColumn}, false);
-            this.Relations.Add(this.relationЗаказыЗаказчик);
-            this.relationАналогиЗапасные_части = new global::System.Data.DataRelation("АналогиЗапасные части", new global::System.Data.DataColumn[] {
-                        this.tableАналоги.___п_пColumn}, new global::System.Data.DataColumn[] {
-                        this.tableЗапасные_части.IdColumn}, false);
-            this.Relations.Add(this.relationАналогиЗапасные_части);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -2238,7 +2210,7 @@ namespace AutoParts {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public Запасные_частиRow AddЗапасные_частиRow(System.DateTime Дата_отгрузки, int Номер_детали, string Место_покупки, int Закупочная_цена, int Цена_отгрузки, string Номер_аналога) {
+            public Запасные_частиRow AddЗапасные_частиRow(int Дата_отгрузки, int Номер_детали, string Место_покупки, int Закупочная_цена, int Цена_отгрузки, string Номер_аналога) {
                 Запасные_частиRow rowЗапасные_частиRow = ((Запасные_частиRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         null,
@@ -2291,7 +2263,7 @@ namespace AutoParts {
             private void InitClass() {
                 this.columnId = new global::System.Data.DataColumn("Id", typeof(int), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnId);
-                this.columnДата_отгрузки = new global::System.Data.DataColumn("Дата отгрузки", typeof(global::System.DateTime), null, global::System.Data.MappingType.Element);
+                this.columnДата_отгрузки = new global::System.Data.DataColumn("Дата отгрузки", typeof(int), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnДата_отгрузки);
                 this.columnНомер_детали = new global::System.Data.DataColumn("Номер детали", typeof(int), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnНомер_детали);
@@ -2648,28 +2620,6 @@ namespace AutoParts {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public ЗаказчикRow ЗаказчикRow {
-                get {
-                    return ((ЗаказчикRow)(this.GetParentRow(this.Table.ParentRelations["ЗаказчикАвтомобили"])));
-                }
-                set {
-                    this.SetParentRow(value, this.Table.ParentRelations["ЗаказчикАвтомобили"]);
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public Запасные_частиRow Запасные_частиRow {
-                get {
-                    return ((Запасные_частиRow)(this.GetParentRow(this.Table.ParentRelations["Запасные частиАвтомобили"])));
-                }
-                set {
-                    this.SetParentRow(value, this.Table.ParentRelations["Запасные частиАвтомобили"]);
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             public bool IsId_автоNull() {
                 return this.IsNull(this.tableАвтомобили.Id_автоColumn);
             }
@@ -2833,17 +2783,6 @@ namespace AutoParts {
             public void SetНаименованиеNull() {
                 this[this.tableАналоги.НаименованиеColumn] = global::System.Convert.DBNull;
             }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public Запасные_частиRow[] GetЗапасные_частиRows() {
-                if ((this.Table.ChildRelations["АналогиЗапасные части"] == null)) {
-                    return new Запасные_частиRow[0];
-                }
-                else {
-                    return ((Запасные_частиRow[])(base.GetChildRows(this.Table.ChildRelations["АналогиЗапасные части"])));
-                }
-            }
         }
         
         /// <summary>
@@ -2969,17 +2908,6 @@ namespace AutoParts {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public ЗаказыRow ЗаказыRow {
-                get {
-                    return ((ЗаказыRow)(this.GetParentRow(this.Table.ParentRelations["ЗаказыЗаказчик"])));
-                }
-                set {
-                    this.SetParentRow(value, this.Table.ParentRelations["ЗаказыЗаказчик"]);
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             public bool IsРеквизитыNull() {
                 return this.IsNull(this.tableЗаказчик.РеквизитыColumn);
             }
@@ -3048,17 +2976,6 @@ namespace AutoParts {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             public void SetМодель_автоNull() {
                 this[this.tableЗаказчик.Модель_автоColumn] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public АвтомобилиRow[] GetАвтомобилиRows() {
-                if ((this.Table.ChildRelations["ЗаказчикАвтомобили"] == null)) {
-                    return new АвтомобилиRow[0];
-                }
-                else {
-                    return ((АвтомобилиRow[])(base.GetChildRows(this.Table.ChildRelations["ЗаказчикАвтомобили"])));
-                }
             }
         }
         
@@ -3226,17 +3143,6 @@ namespace AutoParts {
             public void SetВсего_по_счетуNull() {
                 this[this.tableЗаказы.Всего_по_счетуColumn] = global::System.Convert.DBNull;
             }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public ЗаказчикRow[] GetЗаказчикRows() {
-                if ((this.Table.ChildRelations["ЗаказыЗаказчик"] == null)) {
-                    return new ЗаказчикRow[0];
-                }
-                else {
-                    return ((ЗаказчикRow[])(base.GetChildRows(this.Table.ChildRelations["ЗаказыЗаказчик"])));
-                }
-            }
         }
         
         /// <summary>
@@ -3266,10 +3172,10 @@ namespace AutoParts {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public System.DateTime Дата_отгрузки {
+            public int Дата_отгрузки {
                 get {
                     try {
-                        return ((global::System.DateTime)(this[this.tableЗапасные_части.Дата_отгрузкиColumn]));
+                        return ((int)(this[this.tableЗапасные_части.Дата_отгрузкиColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
                         throw new global::System.Data.StrongTypingException("Значение для столбца \'Дата отгрузки\' в таблице \'Запасные части\' равно DBNull.", e);
@@ -3362,17 +3268,6 @@ namespace AutoParts {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public АналогиRow АналогиRow {
-                get {
-                    return ((АналогиRow)(this.GetParentRow(this.Table.ParentRelations["АналогиЗапасные части"])));
-                }
-                set {
-                    this.SetParentRow(value, this.Table.ParentRelations["АналогиЗапасные части"]);
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             public bool IsДата_отгрузкиNull() {
                 return this.IsNull(this.tableЗапасные_части.Дата_отгрузкиColumn);
             }
@@ -3441,17 +3336,6 @@ namespace AutoParts {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             public void SetНомер_аналогаNull() {
                 this[this.tableЗапасные_части.Номер_аналогаColumn] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public АвтомобилиRow[] GetАвтомобилиRows() {
-                if ((this.Table.ChildRelations["Запасные частиАвтомобили"] == null)) {
-                    return new АвтомобилиRow[0];
-                }
-                else {
-                    return ((АвтомобилиRow[])(base.GetChildRows(this.Table.ChildRelations["Запасные частиАвтомобили"])));
-                }
             }
         }
         
@@ -5705,7 +5589,7 @@ namespace AutoParts.AutoPartsDataSetTableAdapters {
             this._adapter.DeleteCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_Id", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Id", global::System.Data.DataRowVersion.Original, false, null));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("IsNull_Дата_отгрузки", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Дата отгрузки", global::System.Data.DataRowVersion.Original, true, null));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_Дата_отгрузки", global::System.Data.OleDb.OleDbType.Date, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Дата отгрузки", global::System.Data.DataRowVersion.Original, false, null));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_Дата_отгрузки", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Дата отгрузки", global::System.Data.DataRowVersion.Original, false, null));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("IsNull_Номер_детали", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Номер детали", global::System.Data.DataRowVersion.Original, true, null));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_Номер_детали", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Номер детали", global::System.Data.DataRowVersion.Original, false, null));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("IsNull_Место_покупки", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Место покупки", global::System.Data.DataRowVersion.Original, true, null));
@@ -5721,7 +5605,7 @@ namespace AutoParts.AutoPartsDataSetTableAdapters {
             this._adapter.InsertCommand.CommandText = "INSERT INTO `Запасные части` (`Дата отгрузки`, `Номер детали`, `Место покупки`, `" +
                 "Закупочная цена`, `Цена отгрузки`, `Номер аналога`) VALUES (?, ?, ?, ?, ?, ?)";
             this._adapter.InsertCommand.CommandType = global::System.Data.CommandType.Text;
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Дата_отгрузки", global::System.Data.OleDb.OleDbType.Date, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Дата отгрузки", global::System.Data.DataRowVersion.Current, false, null));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Дата_отгрузки", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Дата отгрузки", global::System.Data.DataRowVersion.Current, false, null));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Номер_детали", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Номер детали", global::System.Data.DataRowVersion.Current, false, null));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Место_покупки", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Место покупки", global::System.Data.DataRowVersion.Current, false, null));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Закупочная_цена", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Закупочная цена", global::System.Data.DataRowVersion.Current, false, null));
@@ -5731,7 +5615,7 @@ namespace AutoParts.AutoPartsDataSetTableAdapters {
             this._adapter.UpdateCommand.Connection = this.Connection;
             this._adapter.UpdateCommand.CommandText = @"UPDATE `Запасные части` SET `Дата отгрузки` = ?, `Номер детали` = ?, `Место покупки` = ?, `Закупочная цена` = ?, `Цена отгрузки` = ?, `Номер аналога` = ? WHERE ((`Id` = ?) AND ((? = 1 AND `Дата отгрузки` IS NULL) OR (`Дата отгрузки` = ?)) AND ((? = 1 AND `Номер детали` IS NULL) OR (`Номер детали` = ?)) AND ((? = 1 AND `Место покупки` IS NULL) OR (`Место покупки` = ?)) AND ((? = 1 AND `Закупочная цена` IS NULL) OR (`Закупочная цена` = ?)) AND ((? = 1 AND `Цена отгрузки` IS NULL) OR (`Цена отгрузки` = ?)) AND ((? = 1 AND `Номер аналога` IS NULL) OR (`Номер аналога` = ?)))";
             this._adapter.UpdateCommand.CommandType = global::System.Data.CommandType.Text;
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Дата_отгрузки", global::System.Data.OleDb.OleDbType.Date, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Дата отгрузки", global::System.Data.DataRowVersion.Current, false, null));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Дата_отгрузки", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Дата отгрузки", global::System.Data.DataRowVersion.Current, false, null));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Номер_детали", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Номер детали", global::System.Data.DataRowVersion.Current, false, null));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Место_покупки", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Место покупки", global::System.Data.DataRowVersion.Current, false, null));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Закупочная_цена", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Закупочная цена", global::System.Data.DataRowVersion.Current, false, null));
@@ -5739,7 +5623,7 @@ namespace AutoParts.AutoPartsDataSetTableAdapters {
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Номер_аналога", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Номер аналога", global::System.Data.DataRowVersion.Current, false, null));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_Id", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Id", global::System.Data.DataRowVersion.Original, false, null));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("IsNull_Дата_отгрузки", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Дата отгрузки", global::System.Data.DataRowVersion.Original, true, null));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_Дата_отгрузки", global::System.Data.OleDb.OleDbType.Date, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Дата отгрузки", global::System.Data.DataRowVersion.Original, false, null));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_Дата_отгрузки", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Дата отгрузки", global::System.Data.DataRowVersion.Original, false, null));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("IsNull_Номер_детали", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Номер детали", global::System.Data.DataRowVersion.Original, true, null));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_Номер_детали", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Номер детали", global::System.Data.DataRowVersion.Original, false, null));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("IsNull_Место_покупки", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Место покупки", global::System.Data.DataRowVersion.Original, true, null));
@@ -5827,11 +5711,11 @@ namespace AutoParts.AutoPartsDataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Delete, true)]
-        public virtual int Delete(int Original_Id, global::System.Nullable<global::System.DateTime> Original_Дата_отгрузки, global::System.Nullable<int> Original_Номер_детали, string Original_Место_покупки, global::System.Nullable<int> Original_Закупочная_цена, global::System.Nullable<int> Original_Цена_отгрузки, string Original_Номер_аналога) {
+        public virtual int Delete(int Original_Id, global::System.Nullable<int> Original_Дата_отгрузки, global::System.Nullable<int> Original_Номер_детали, string Original_Место_покупки, global::System.Nullable<int> Original_Закупочная_цена, global::System.Nullable<int> Original_Цена_отгрузки, string Original_Номер_аналога) {
             this.Adapter.DeleteCommand.Parameters[0].Value = ((int)(Original_Id));
             if ((Original_Дата_отгрузки.HasValue == true)) {
                 this.Adapter.DeleteCommand.Parameters[1].Value = ((object)(0));
-                this.Adapter.DeleteCommand.Parameters[2].Value = ((System.DateTime)(Original_Дата_отгрузки.Value));
+                this.Adapter.DeleteCommand.Parameters[2].Value = ((int)(Original_Дата_отгрузки.Value));
             }
             else {
                 this.Adapter.DeleteCommand.Parameters[1].Value = ((object)(1));
@@ -5897,9 +5781,9 @@ namespace AutoParts.AutoPartsDataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Insert, true)]
-        public virtual int Insert(global::System.Nullable<global::System.DateTime> Дата_отгрузки, global::System.Nullable<int> Номер_детали, string Место_покупки, global::System.Nullable<int> Закупочная_цена, global::System.Nullable<int> Цена_отгрузки, string Номер_аналога) {
+        public virtual int Insert(global::System.Nullable<int> Дата_отгрузки, global::System.Nullable<int> Номер_детали, string Место_покупки, global::System.Nullable<int> Закупочная_цена, global::System.Nullable<int> Цена_отгрузки, string Номер_аналога) {
             if ((Дата_отгрузки.HasValue == true)) {
-                this.Adapter.InsertCommand.Parameters[0].Value = ((System.DateTime)(Дата_отгрузки.Value));
+                this.Adapter.InsertCommand.Parameters[0].Value = ((int)(Дата_отгрузки.Value));
             }
             else {
                 this.Adapter.InsertCommand.Parameters[0].Value = global::System.DBNull.Value;
@@ -5954,9 +5838,9 @@ namespace AutoParts.AutoPartsDataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
-        public virtual int Update(global::System.Nullable<global::System.DateTime> Дата_отгрузки, global::System.Nullable<int> Номер_детали, string Место_покупки, global::System.Nullable<int> Закупочная_цена, global::System.Nullable<int> Цена_отгрузки, string Номер_аналога, int Original_Id, global::System.Nullable<global::System.DateTime> Original_Дата_отгрузки, global::System.Nullable<int> Original_Номер_детали, string Original_Место_покупки, global::System.Nullable<int> Original_Закупочная_цена, global::System.Nullable<int> Original_Цена_отгрузки, string Original_Номер_аналога) {
+        public virtual int Update(global::System.Nullable<int> Дата_отгрузки, global::System.Nullable<int> Номер_детали, string Место_покупки, global::System.Nullable<int> Закупочная_цена, global::System.Nullable<int> Цена_отгрузки, string Номер_аналога, int Original_Id, global::System.Nullable<int> Original_Дата_отгрузки, global::System.Nullable<int> Original_Номер_детали, string Original_Место_покупки, global::System.Nullable<int> Original_Закупочная_цена, global::System.Nullable<int> Original_Цена_отгрузки, string Original_Номер_аналога) {
             if ((Дата_отгрузки.HasValue == true)) {
-                this.Adapter.UpdateCommand.Parameters[0].Value = ((System.DateTime)(Дата_отгрузки.Value));
+                this.Adapter.UpdateCommand.Parameters[0].Value = ((int)(Дата_отгрузки.Value));
             }
             else {
                 this.Adapter.UpdateCommand.Parameters[0].Value = global::System.DBNull.Value;
@@ -5994,7 +5878,7 @@ namespace AutoParts.AutoPartsDataSetTableAdapters {
             this.Adapter.UpdateCommand.Parameters[6].Value = ((int)(Original_Id));
             if ((Original_Дата_отгрузки.HasValue == true)) {
                 this.Adapter.UpdateCommand.Parameters[7].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[8].Value = ((System.DateTime)(Original_Дата_отгрузки.Value));
+                this.Adapter.UpdateCommand.Parameters[8].Value = ((int)(Original_Дата_отгрузки.Value));
             }
             else {
                 this.Adapter.UpdateCommand.Parameters[7].Value = ((object)(1));
@@ -6265,42 +6149,6 @@ namespace AutoParts.AutoPartsDataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         private int UpdateUpdatedRows(AutoPartsDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
-            if ((this._аналогиTableAdapter != null)) {
-                global::System.Data.DataRow[] updatedRows = dataSet.Аналоги.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
-                updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
-                if (((updatedRows != null) 
-                            && (0 < updatedRows.Length))) {
-                    result = (result + this._аналогиTableAdapter.Update(updatedRows));
-                    allChangedRows.AddRange(updatedRows);
-                }
-            }
-            if ((this._заказыTableAdapter != null)) {
-                global::System.Data.DataRow[] updatedRows = dataSet.Заказы.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
-                updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
-                if (((updatedRows != null) 
-                            && (0 < updatedRows.Length))) {
-                    result = (result + this._заказыTableAdapter.Update(updatedRows));
-                    allChangedRows.AddRange(updatedRows);
-                }
-            }
-            if ((this._заказчикTableAdapter != null)) {
-                global::System.Data.DataRow[] updatedRows = dataSet.Заказчик.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
-                updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
-                if (((updatedRows != null) 
-                            && (0 < updatedRows.Length))) {
-                    result = (result + this._заказчикTableAdapter.Update(updatedRows));
-                    allChangedRows.AddRange(updatedRows);
-                }
-            }
-            if ((this._запасные_частиTableAdapter != null)) {
-                global::System.Data.DataRow[] updatedRows = dataSet.Запасные_части.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
-                updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
-                if (((updatedRows != null) 
-                            && (0 < updatedRows.Length))) {
-                    result = (result + this._запасные_частиTableAdapter.Update(updatedRows));
-                    allChangedRows.AddRange(updatedRows);
-                }
-            }
             if ((this._vin_кодыTableAdapter != null)) {
                 global::System.Data.DataRow[] updatedRows = dataSet.Vin_коды.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
                 updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
@@ -6319,6 +6167,42 @@ namespace AutoParts.AutoPartsDataSetTableAdapters {
                     allChangedRows.AddRange(updatedRows);
                 }
             }
+            if ((this._аналогиTableAdapter != null)) {
+                global::System.Data.DataRow[] updatedRows = dataSet.Аналоги.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
+                updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
+                if (((updatedRows != null) 
+                            && (0 < updatedRows.Length))) {
+                    result = (result + this._аналогиTableAdapter.Update(updatedRows));
+                    allChangedRows.AddRange(updatedRows);
+                }
+            }
+            if ((this._заказчикTableAdapter != null)) {
+                global::System.Data.DataRow[] updatedRows = dataSet.Заказчик.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
+                updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
+                if (((updatedRows != null) 
+                            && (0 < updatedRows.Length))) {
+                    result = (result + this._заказчикTableAdapter.Update(updatedRows));
+                    allChangedRows.AddRange(updatedRows);
+                }
+            }
+            if ((this._заказыTableAdapter != null)) {
+                global::System.Data.DataRow[] updatedRows = dataSet.Заказы.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
+                updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
+                if (((updatedRows != null) 
+                            && (0 < updatedRows.Length))) {
+                    result = (result + this._заказыTableAdapter.Update(updatedRows));
+                    allChangedRows.AddRange(updatedRows);
+                }
+            }
+            if ((this._запасные_частиTableAdapter != null)) {
+                global::System.Data.DataRow[] updatedRows = dataSet.Запасные_части.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
+                updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
+                if (((updatedRows != null) 
+                            && (0 < updatedRows.Length))) {
+                    result = (result + this._запасные_частиTableAdapter.Update(updatedRows));
+                    allChangedRows.AddRange(updatedRows);
+                }
+            }
             return result;
         }
         
@@ -6329,38 +6213,6 @@ namespace AutoParts.AutoPartsDataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         private int UpdateInsertedRows(AutoPartsDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
-            if ((this._аналогиTableAdapter != null)) {
-                global::System.Data.DataRow[] addedRows = dataSet.Аналоги.Select(null, null, global::System.Data.DataViewRowState.Added);
-                if (((addedRows != null) 
-                            && (0 < addedRows.Length))) {
-                    result = (result + this._аналогиTableAdapter.Update(addedRows));
-                    allAddedRows.AddRange(addedRows);
-                }
-            }
-            if ((this._заказыTableAdapter != null)) {
-                global::System.Data.DataRow[] addedRows = dataSet.Заказы.Select(null, null, global::System.Data.DataViewRowState.Added);
-                if (((addedRows != null) 
-                            && (0 < addedRows.Length))) {
-                    result = (result + this._заказыTableAdapter.Update(addedRows));
-                    allAddedRows.AddRange(addedRows);
-                }
-            }
-            if ((this._заказчикTableAdapter != null)) {
-                global::System.Data.DataRow[] addedRows = dataSet.Заказчик.Select(null, null, global::System.Data.DataViewRowState.Added);
-                if (((addedRows != null) 
-                            && (0 < addedRows.Length))) {
-                    result = (result + this._заказчикTableAdapter.Update(addedRows));
-                    allAddedRows.AddRange(addedRows);
-                }
-            }
-            if ((this._запасные_частиTableAdapter != null)) {
-                global::System.Data.DataRow[] addedRows = dataSet.Запасные_части.Select(null, null, global::System.Data.DataViewRowState.Added);
-                if (((addedRows != null) 
-                            && (0 < addedRows.Length))) {
-                    result = (result + this._запасные_частиTableAdapter.Update(addedRows));
-                    allAddedRows.AddRange(addedRows);
-                }
-            }
             if ((this._vin_кодыTableAdapter != null)) {
                 global::System.Data.DataRow[] addedRows = dataSet.Vin_коды.Select(null, null, global::System.Data.DataViewRowState.Added);
                 if (((addedRows != null) 
@@ -6377,6 +6229,38 @@ namespace AutoParts.AutoPartsDataSetTableAdapters {
                     allAddedRows.AddRange(addedRows);
                 }
             }
+            if ((this._аналогиTableAdapter != null)) {
+                global::System.Data.DataRow[] addedRows = dataSet.Аналоги.Select(null, null, global::System.Data.DataViewRowState.Added);
+                if (((addedRows != null) 
+                            && (0 < addedRows.Length))) {
+                    result = (result + this._аналогиTableAdapter.Update(addedRows));
+                    allAddedRows.AddRange(addedRows);
+                }
+            }
+            if ((this._заказчикTableAdapter != null)) {
+                global::System.Data.DataRow[] addedRows = dataSet.Заказчик.Select(null, null, global::System.Data.DataViewRowState.Added);
+                if (((addedRows != null) 
+                            && (0 < addedRows.Length))) {
+                    result = (result + this._заказчикTableAdapter.Update(addedRows));
+                    allAddedRows.AddRange(addedRows);
+                }
+            }
+            if ((this._заказыTableAdapter != null)) {
+                global::System.Data.DataRow[] addedRows = dataSet.Заказы.Select(null, null, global::System.Data.DataViewRowState.Added);
+                if (((addedRows != null) 
+                            && (0 < addedRows.Length))) {
+                    result = (result + this._заказыTableAdapter.Update(addedRows));
+                    allAddedRows.AddRange(addedRows);
+                }
+            }
+            if ((this._запасные_частиTableAdapter != null)) {
+                global::System.Data.DataRow[] addedRows = dataSet.Запасные_части.Select(null, null, global::System.Data.DataViewRowState.Added);
+                if (((addedRows != null) 
+                            && (0 < addedRows.Length))) {
+                    result = (result + this._запасные_частиTableAdapter.Update(addedRows));
+                    allAddedRows.AddRange(addedRows);
+                }
+            }
             return result;
         }
         
@@ -6387,6 +6271,38 @@ namespace AutoParts.AutoPartsDataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         private int UpdateDeletedRows(AutoPartsDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows) {
             int result = 0;
+            if ((this._запасные_частиTableAdapter != null)) {
+                global::System.Data.DataRow[] deletedRows = dataSet.Запасные_части.Select(null, null, global::System.Data.DataViewRowState.Deleted);
+                if (((deletedRows != null) 
+                            && (0 < deletedRows.Length))) {
+                    result = (result + this._запасные_частиTableAdapter.Update(deletedRows));
+                    allChangedRows.AddRange(deletedRows);
+                }
+            }
+            if ((this._заказыTableAdapter != null)) {
+                global::System.Data.DataRow[] deletedRows = dataSet.Заказы.Select(null, null, global::System.Data.DataViewRowState.Deleted);
+                if (((deletedRows != null) 
+                            && (0 < deletedRows.Length))) {
+                    result = (result + this._заказыTableAdapter.Update(deletedRows));
+                    allChangedRows.AddRange(deletedRows);
+                }
+            }
+            if ((this._заказчикTableAdapter != null)) {
+                global::System.Data.DataRow[] deletedRows = dataSet.Заказчик.Select(null, null, global::System.Data.DataViewRowState.Deleted);
+                if (((deletedRows != null) 
+                            && (0 < deletedRows.Length))) {
+                    result = (result + this._заказчикTableAdapter.Update(deletedRows));
+                    allChangedRows.AddRange(deletedRows);
+                }
+            }
+            if ((this._аналогиTableAdapter != null)) {
+                global::System.Data.DataRow[] deletedRows = dataSet.Аналоги.Select(null, null, global::System.Data.DataViewRowState.Deleted);
+                if (((deletedRows != null) 
+                            && (0 < deletedRows.Length))) {
+                    result = (result + this._аналогиTableAdapter.Update(deletedRows));
+                    allChangedRows.AddRange(deletedRows);
+                }
+            }
             if ((this._автомобилиTableAdapter != null)) {
                 global::System.Data.DataRow[] deletedRows = dataSet.Автомобили.Select(null, null, global::System.Data.DataViewRowState.Deleted);
                 if (((deletedRows != null) 
@@ -6400,38 +6316,6 @@ namespace AutoParts.AutoPartsDataSetTableAdapters {
                 if (((deletedRows != null) 
                             && (0 < deletedRows.Length))) {
                     result = (result + this._vin_кодыTableAdapter.Update(deletedRows));
-                    allChangedRows.AddRange(deletedRows);
-                }
-            }
-            if ((this._запасные_частиTableAdapter != null)) {
-                global::System.Data.DataRow[] deletedRows = dataSet.Запасные_части.Select(null, null, global::System.Data.DataViewRowState.Deleted);
-                if (((deletedRows != null) 
-                            && (0 < deletedRows.Length))) {
-                    result = (result + this._запасные_частиTableAdapter.Update(deletedRows));
-                    allChangedRows.AddRange(deletedRows);
-                }
-            }
-            if ((this._заказчикTableAdapter != null)) {
-                global::System.Data.DataRow[] deletedRows = dataSet.Заказчик.Select(null, null, global::System.Data.DataViewRowState.Deleted);
-                if (((deletedRows != null) 
-                            && (0 < deletedRows.Length))) {
-                    result = (result + this._заказчикTableAdapter.Update(deletedRows));
-                    allChangedRows.AddRange(deletedRows);
-                }
-            }
-            if ((this._заказыTableAdapter != null)) {
-                global::System.Data.DataRow[] deletedRows = dataSet.Заказы.Select(null, null, global::System.Data.DataViewRowState.Deleted);
-                if (((deletedRows != null) 
-                            && (0 < deletedRows.Length))) {
-                    result = (result + this._заказыTableAdapter.Update(deletedRows));
-                    allChangedRows.AddRange(deletedRows);
-                }
-            }
-            if ((this._аналогиTableAdapter != null)) {
-                global::System.Data.DataRow[] deletedRows = dataSet.Аналоги.Select(null, null, global::System.Data.DataViewRowState.Deleted);
-                if (((deletedRows != null) 
-                            && (0 < deletedRows.Length))) {
-                    result = (result + this._аналогиTableAdapter.Update(deletedRows));
                     allChangedRows.AddRange(deletedRows);
                 }
             }
