@@ -4,12 +4,12 @@
     <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
       <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
         <Connections>
-          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="AutoPartsConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="AutoPartsConnectionString (Settings)" PropertyReference="ApplicationSettings.AutoParts.Properties.Settings.GlobalReference.Default.AutoPartsConnectionString" Provider="System.Data.OleDb" />
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="AutoPartsConnectionString1" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="AutoPartsConnectionString1 (Settings)" PropertyReference="ApplicationSettings.AutoParts.Properties.Settings.GlobalReference.Default.AutoPartsConnectionString1" Provider="System.Data.OleDb" />
         </Connections>
         <Tables>
           <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="Vin кодыTableAdapter" GeneratorDataComponentClassName="Vin_кодыTableAdapter" Name="Vin коды" UserDataComponentName="Vin кодыTableAdapter">
             <MainSource>
-              <DbSource ConnectionRef="AutoPartsConnectionString (Settings)" DbObjectName="Vin коды" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+              <DbSource ConnectionRef="AutoPartsConnectionString1 (Settings)" DbObjectName="Vin коды" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
                 <DeleteCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="false">
                     <CommandText>DELETE FROM `Vin коды` WHERE ((`№ п/п` = ?) AND ((? = 1 AND `Vin код` IS NULL) OR (`Vin код` = ?)) AND ((? = 1 AND `Год` IS NULL) OR (`Год` = ?)))</CommandText>
@@ -62,7 +62,7 @@
           </TableAdapter>
           <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="АвтомобилиTableAdapter" GeneratorDataComponentClassName="АвтомобилиTableAdapter" Name="Автомобили" UserDataComponentName="АвтомобилиTableAdapter">
             <MainSource>
-              <DbSource ConnectionRef="AutoPartsConnectionString (Settings)" DbObjectName="Автомобили" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+              <DbSource ConnectionRef="AutoPartsConnectionString1 (Settings)" DbObjectName="Автомобили" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
                 <InsertCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="false">
                     <CommandText>INSERT INTO `Автомобили` (`Название авто`, `Модель авто`, `Год выпуска`, `Объем двигателя`, `Vin код`, `Номер детали`) VALUES (?, ?, ?, ?, ?, ?)</CommandText>
@@ -97,7 +97,7 @@
           </TableAdapter>
           <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="АналогиTableAdapter" GeneratorDataComponentClassName="АналогиTableAdapter" Name="Аналоги" UserDataComponentName="АналогиTableAdapter">
             <MainSource>
-              <DbSource ConnectionRef="AutoPartsConnectionString (Settings)" DbObjectName="Аналоги" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+              <DbSource ConnectionRef="AutoPartsConnectionString1 (Settings)" DbObjectName="Аналоги" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
                 <DeleteCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="false">
                     <CommandText>DELETE FROM `Аналоги` WHERE ((`№ п/п` = ?) AND ((? = 1 AND `Номер аналога` IS NULL) OR (`Номер аналога` = ?)) AND ((? = 1 AND `Наименование` IS NULL) OR (`Наименование` = ?)))</CommandText>
@@ -150,7 +150,7 @@
           </TableAdapter>
           <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="ЗаказчикTableAdapter" GeneratorDataComponentClassName="ЗаказчикTableAdapter" Name="Заказчик" UserDataComponentName="ЗаказчикTableAdapter">
             <MainSource>
-              <DbSource ConnectionRef="AutoPartsConnectionString (Settings)" DbObjectName="Заказчик" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+              <DbSource ConnectionRef="AutoPartsConnectionString1 (Settings)" DbObjectName="Заказчик" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
                 <DeleteCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="false">
                     <CommandText>DELETE FROM `Заказчик` WHERE ((`№ п/п` = ?) AND ((? = 1 AND `Реквизиты` IS NULL) OR (`Реквизиты` = ?)) AND ((? = 1 AND `Контактное лицо` IS NULL) OR (`Контактное лицо` = ?)) AND ((? = 1 AND `№ счета` IS NULL) OR (`№ счета` = ?)) AND ((? = 1 AND `№ телефона` IS NULL) OR (`№ телефона` = ?)) AND ((? = 1 AND `Название авто` IS NULL) OR (`Название авто` = ?)) AND ((? = 1 AND `Модель авто` IS NULL) OR (`Модель авто` = ?)))</CommandText>
@@ -231,14 +231,14 @@
           </TableAdapter>
           <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="ЗаказыTableAdapter" GeneratorDataComponentClassName="ЗаказыTableAdapter" Name="Заказы" UserDataComponentName="ЗаказыTableAdapter">
             <MainSource>
-              <DbSource ConnectionRef="AutoPartsConnectionString (Settings)" DbObjectName="Заказы" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+              <DbSource ConnectionRef="AutoPartsConnectionString1 (Settings)" DbObjectName="Заказы" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
                 <DeleteCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="false">
                     <CommandText>DELETE FROM `Заказы` WHERE ((`Id_заказа` = ?) AND ((? = 1 AND `Дата счета` IS NULL) OR (`Дата счета` = ?)) AND ((? = 1 AND `№ счета` IS NULL) OR (`№ счета` = ?)) AND ((? = 1 AND `ФИО_Заказчика` IS NULL) OR (`ФИО_Заказчика` = ?)) AND ((? = 1 AND `ФИО_Поставщика` IS NULL) OR (`ФИО_Поставщика` = ?)) AND ((? = 1 AND `Всего по счету` IS NULL) OR (`Всего по счету` = ?)))</CommandText>
                     <Parameters>
                       <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="Original_Id_заказа" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="Id_заказа" SourceColumnNullMapping="false" SourceVersion="Original" />
                       <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_Дата_счета" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="Дата счета" SourceColumnNullMapping="true" SourceVersion="Original" />
-                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="Original_Дата_счета" Precision="0" ProviderType="Date" Scale="0" Size="0" SourceColumn="Дата счета" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_Дата_счета" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="Дата счета" SourceColumnNullMapping="false" SourceVersion="Original" />
                       <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_№_счета" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="№ счета" SourceColumnNullMapping="true" SourceVersion="Original" />
                       <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="Original_№_счета" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="№ счета" SourceColumnNullMapping="false" SourceVersion="Original" />
                       <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_ФИО_Заказчика" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="ФИО_Заказчика" SourceColumnNullMapping="true" SourceVersion="Original" />
@@ -254,7 +254,7 @@
                   <DbCommand CommandType="Text" ModifiedByUser="false">
                     <CommandText>INSERT INTO `Заказы` (`Дата счета`, `№ счета`, `ФИО_Заказчика`, `ФИО_Поставщика`, `Всего по счету`) VALUES (?, ?, ?, ?, ?)</CommandText>
                     <Parameters>
-                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="Дата_счета" Precision="0" ProviderType="Date" Scale="0" Size="0" SourceColumn="Дата счета" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Дата_счета" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="Дата счета" SourceColumnNullMapping="false" SourceVersion="Current" />
                       <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="№_счета" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="№ счета" SourceColumnNullMapping="false" SourceVersion="Current" />
                       <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="ФИО_Заказчика" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="ФИО_Заказчика" SourceColumnNullMapping="false" SourceVersion="Current" />
                       <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="ФИО_Поставщика" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="ФИО_Поставщика" SourceColumnNullMapping="false" SourceVersion="Current" />
@@ -272,14 +272,14 @@
                   <DbCommand CommandType="Text" ModifiedByUser="false">
                     <CommandText>UPDATE `Заказы` SET `Дата счета` = ?, `№ счета` = ?, `ФИО_Заказчика` = ?, `ФИО_Поставщика` = ?, `Всего по счету` = ? WHERE ((`Id_заказа` = ?) AND ((? = 1 AND `Дата счета` IS NULL) OR (`Дата счета` = ?)) AND ((? = 1 AND `№ счета` IS NULL) OR (`№ счета` = ?)) AND ((? = 1 AND `ФИО_Заказчика` IS NULL) OR (`ФИО_Заказчика` = ?)) AND ((? = 1 AND `ФИО_Поставщика` IS NULL) OR (`ФИО_Поставщика` = ?)) AND ((? = 1 AND `Всего по счету` IS NULL) OR (`Всего по счету` = ?)))</CommandText>
                     <Parameters>
-                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="Дата_счета" Precision="0" ProviderType="Date" Scale="0" Size="0" SourceColumn="Дата счета" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Дата_счета" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="Дата счета" SourceColumnNullMapping="false" SourceVersion="Current" />
                       <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="№_счета" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="№ счета" SourceColumnNullMapping="false" SourceVersion="Current" />
                       <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="ФИО_Заказчика" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="ФИО_Заказчика" SourceColumnNullMapping="false" SourceVersion="Current" />
                       <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="ФИО_Поставщика" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="ФИО_Поставщика" SourceColumnNullMapping="false" SourceVersion="Current" />
                       <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="Всего_по_счету" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="Всего по счету" SourceColumnNullMapping="false" SourceVersion="Current" />
                       <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="Original_Id_заказа" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="Id_заказа" SourceColumnNullMapping="false" SourceVersion="Original" />
                       <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_Дата_счета" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="Дата счета" SourceColumnNullMapping="true" SourceVersion="Original" />
-                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="Original_Дата_счета" Precision="0" ProviderType="Date" Scale="0" Size="0" SourceColumn="Дата счета" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_Дата_счета" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="Дата счета" SourceColumnNullMapping="false" SourceVersion="Original" />
                       <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_№_счета" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="№ счета" SourceColumnNullMapping="true" SourceVersion="Original" />
                       <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="Original_№_счета" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="№ счета" SourceColumnNullMapping="false" SourceVersion="Original" />
                       <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_ФИО_Заказчика" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="ФИО_Заказчика" SourceColumnNullMapping="true" SourceVersion="Original" />
@@ -305,7 +305,7 @@
           </TableAdapter>
           <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="Запасные частиTableAdapter" GeneratorDataComponentClassName="Запасные_частиTableAdapter" Name="Запасные части" UserDataComponentName="Запасные частиTableAdapter">
             <MainSource>
-              <DbSource ConnectionRef="AutoPartsConnectionString (Settings)" DbObjectName="Запасные части" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+              <DbSource ConnectionRef="AutoPartsConnectionString1 (Settings)" DbObjectName="Запасные части" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
                 <DeleteCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="false">
                     <CommandText>DELETE FROM `Запасные части` WHERE ((`Id` = ?) AND ((? = 1 AND `Дата отгрузки` IS NULL) OR (`Дата отгрузки` = ?)) AND ((? = 1 AND `Номер детали` IS NULL) OR (`Номер детали` = ?)) AND ((? = 1 AND `Место покупки` IS NULL) OR (`Место покупки` = ?)) AND ((? = 1 AND `Закупочная цена` IS NULL) OR (`Закупочная цена` = ?)) AND ((? = 1 AND `Цена отгрузки` IS NULL) OR (`Цена отгрузки` = ?)) AND ((? = 1 AND `Номер аналога` IS NULL) OR (`Номер аналога` = ?)))</CommandText>
@@ -384,6 +384,80 @@
             </Mappings>
             <Sources />
           </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="ЗаказыЗапросTableAdapter" GeneratorDataComponentClassName="ЗаказыЗапросTableAdapter" Name="ЗаказыЗапрос" UserDataComponentName="ЗаказыЗапросTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="AutoPartsConnectionString1 (Settings)" DbObjectName="Заказы" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <DeleteCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>DELETE FROM `Заказы` WHERE ((`Id_заказа` = ?) AND ((? = 1 AND `Дата счета` IS NULL) OR (`Дата счета` = ?)) AND ((? = 1 AND `№ счета` IS NULL) OR (`№ счета` = ?)) AND ((? = 1 AND `ФИО_Заказчика` IS NULL) OR (`ФИО_Заказчика` = ?)) AND ((? = 1 AND `ФИО_Поставщика` IS NULL) OR (`ФИО_Поставщика` = ?)) AND ((? = 1 AND `Всего по счету` IS NULL) OR (`Всего по счету` = ?)))</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="Original_Id_заказа" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="Id_заказа" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_Дата_счета" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="Дата счета" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_Дата_счета" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="Дата счета" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_№_счета" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="№ счета" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="Original_№_счета" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="№ счета" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_ФИО_Заказчика" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="ФИО_Заказчика" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_ФИО_Заказчика" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="ФИО_Заказчика" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_ФИО_Поставщика" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="ФИО_Поставщика" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_ФИО_Поставщика" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="ФИО_Поставщика" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_Всего_по_счету" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="Всего по счету" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="Original_Всего_по_счету" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="Всего по счету" SourceColumnNullMapping="false" SourceVersion="Original" />
+                    </Parameters>
+                  </DbCommand>
+                </DeleteCommand>
+                <InsertCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>INSERT INTO `Заказы` (`Дата счета`, `№ счета`, `ФИО_Заказчика`, `ФИО_Поставщика`, `Всего по счету`) VALUES (?, ?, ?, ?, ?)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Дата_счета" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="Дата счета" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="№_счета" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="№ счета" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="ФИО_Заказчика" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="ФИО_Заказчика" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="ФИО_Поставщика" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="ФИО_Поставщика" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="Всего_по_счету" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="Всего по счету" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </InsertCommand>
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT Id_заказа, [Дата счета], [№ счета], ФИО_Заказчика, ФИО_Поставщика, [Всего по счету] FROM Заказы</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+                <UpdateCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>UPDATE `Заказы` SET `Дата счета` = ?, `№ счета` = ?, `ФИО_Заказчика` = ?, `ФИО_Поставщика` = ?, `Всего по счету` = ? WHERE ((`Id_заказа` = ?) AND ((? = 1 AND `Дата счета` IS NULL) OR (`Дата счета` = ?)) AND ((? = 1 AND `№ счета` IS NULL) OR (`№ счета` = ?)) AND ((? = 1 AND `ФИО_Заказчика` IS NULL) OR (`ФИО_Заказчика` = ?)) AND ((? = 1 AND `ФИО_Поставщика` IS NULL) OR (`ФИО_Поставщика` = ?)) AND ((? = 1 AND `Всего по счету` IS NULL) OR (`Всего по счету` = ?)))</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Дата_счета" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="Дата счета" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="№_счета" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="№ счета" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="ФИО_Заказчика" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="ФИО_Заказчика" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="ФИО_Поставщика" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="ФИО_Поставщика" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="Всего_по_счету" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="Всего по счету" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="Original_Id_заказа" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="Id_заказа" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_Дата_счета" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="Дата счета" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_Дата_счета" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="Дата счета" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_№_счета" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="№ счета" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="Original_№_счета" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="№ счета" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_ФИО_Заказчика" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="ФИО_Заказчика" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_ФИО_Заказчика" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="ФИО_Заказчика" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_ФИО_Поставщика" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="ФИО_Поставщика" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_ФИО_Поставщика" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="ФИО_Поставщика" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_Всего_по_счету" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="Всего по счету" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="Original_Всего_по_счету" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="Всего по счету" SourceColumnNullMapping="false" SourceVersion="Original" />
+                    </Parameters>
+                  </DbCommand>
+                </UpdateCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Id_заказа" DataSetColumn="Id_заказа" />
+              <Mapping SourceColumn="Дата счета" DataSetColumn="Дата счета" />
+              <Mapping SourceColumn="№ счета" DataSetColumn="№ счета" />
+              <Mapping SourceColumn="ФИО_Заказчика" DataSetColumn="ФИО_Заказчика" />
+              <Mapping SourceColumn="ФИО_Поставщика" DataSetColumn="ФИО_Поставщика" />
+              <Mapping SourceColumn="Всего по счету" DataSetColumn="Всего по счету" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
         </Tables>
         <Sources />
       </DataSource>
@@ -392,7 +466,7 @@
   <xs:element name="AutoPartsDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="AutoPartsDataSet" msprop:Generator_UserDSName="AutoPartsDataSet">
     <xs:complexType>
       <xs:choice minOccurs="0" maxOccurs="unbounded">
-        <xs:element name="Vin_x0020_коды" msprop:Generator_TableClassName="Vin_кодыDataTable" msprop:Generator_TableVarName="tableVin_коды" msprop:Generator_TablePropName="Vin_коды" msprop:Generator_RowDeletingName="Vin_кодыRowDeleting" msprop:Generator_RowChangingName="Vin_кодыRowChanging" msprop:Generator_RowEvHandlerName="Vin_кодыRowChangeEventHandler" msprop:Generator_RowDeletedName="Vin_кодыRowDeleted" msprop:Generator_UserTableName="Vin коды" msprop:Generator_RowChangedName="Vin_кодыRowChanged" msprop:Generator_RowEvArgName="Vin_кодыRowChangeEvent" msprop:Generator_RowClassName="Vin_кодыRow">
+        <xs:element name="Vin_x0020_коды" msprop:Generator_TableClassName="Vin_кодыDataTable" msprop:Generator_TableVarName="tableVin_коды" msprop:Generator_RowChangedName="Vin_кодыRowChanged" msprop:Generator_TablePropName="Vin_коды" msprop:Generator_RowDeletingName="Vin_кодыRowDeleting" msprop:Generator_RowChangingName="Vin_кодыRowChanging" msprop:Generator_RowEvHandlerName="Vin_кодыRowChangeEventHandler" msprop:Generator_RowDeletedName="Vin_кодыRowDeleted" msprop:Generator_RowClassName="Vin_кодыRow" msprop:Generator_UserTableName="Vin коды" msprop:Generator_RowEvArgName="Vin_кодыRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="_x2116__x0020_п_x002F_п" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="_column__п_п" msprop:Generator_ColumnPropNameInRow="___п_п" msprop:Generator_ColumnPropNameInTable="___п_пColumn" msprop:Generator_UserColumnName="№ п/п" type="xs:int" />
@@ -401,7 +475,7 @@
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="Автомобили" msprop:Generator_TableClassName="АвтомобилиDataTable" msprop:Generator_TableVarName="tableАвтомобили" msprop:Generator_TablePropName="Автомобили" msprop:Generator_RowDeletingName="АвтомобилиRowDeleting" msprop:Generator_RowChangingName="АвтомобилиRowChanging" msprop:Generator_RowEvHandlerName="АвтомобилиRowChangeEventHandler" msprop:Generator_RowDeletedName="АвтомобилиRowDeleted" msprop:Generator_UserTableName="Автомобили" msprop:Generator_RowChangedName="АвтомобилиRowChanged" msprop:Generator_RowEvArgName="АвтомобилиRowChangeEvent" msprop:Generator_RowClassName="АвтомобилиRow">
+        <xs:element name="Автомобили" msprop:Generator_TableClassName="АвтомобилиDataTable" msprop:Generator_TableVarName="tableАвтомобили" msprop:Generator_RowChangedName="АвтомобилиRowChanged" msprop:Generator_TablePropName="Автомобили" msprop:Generator_RowDeletingName="АвтомобилиRowDeleting" msprop:Generator_RowChangingName="АвтомобилиRowChanging" msprop:Generator_RowEvHandlerName="АвтомобилиRowChangeEventHandler" msprop:Generator_RowDeletedName="АвтомобилиRowDeleted" msprop:Generator_RowClassName="АвтомобилиRow" msprop:Generator_UserTableName="Автомобили" msprop:Generator_RowEvArgName="АвтомобилиRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="Id_авто" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnId_авто" msprop:Generator_ColumnPropNameInRow="Id_авто" msprop:Generator_ColumnPropNameInTable="Id_автоColumn" msprop:Generator_UserColumnName="Id_авто" type="xs:int" minOccurs="0" />
@@ -432,7 +506,7 @@
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="Аналоги" msprop:Generator_TableClassName="АналогиDataTable" msprop:Generator_TableVarName="tableАналоги" msprop:Generator_TablePropName="Аналоги" msprop:Generator_RowDeletingName="АналогиRowDeleting" msprop:Generator_RowChangingName="АналогиRowChanging" msprop:Generator_RowEvHandlerName="АналогиRowChangeEventHandler" msprop:Generator_RowDeletedName="АналогиRowDeleted" msprop:Generator_UserTableName="Аналоги" msprop:Generator_RowChangedName="АналогиRowChanged" msprop:Generator_RowEvArgName="АналогиRowChangeEvent" msprop:Generator_RowClassName="АналогиRow">
+        <xs:element name="Аналоги" msprop:Generator_TableClassName="АналогиDataTable" msprop:Generator_TableVarName="tableАналоги" msprop:Generator_RowChangedName="АналогиRowChanged" msprop:Generator_TablePropName="Аналоги" msprop:Generator_RowDeletingName="АналогиRowDeleting" msprop:Generator_RowChangingName="АналогиRowChanging" msprop:Generator_RowEvHandlerName="АналогиRowChangeEventHandler" msprop:Generator_RowDeletedName="АналогиRowDeleted" msprop:Generator_RowClassName="АналогиRow" msprop:Generator_UserTableName="Аналоги" msprop:Generator_RowEvArgName="АналогиRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="_x2116__x0020_п_x002F_п" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="_column__п_п" msprop:Generator_ColumnPropNameInRow="___п_п" msprop:Generator_ColumnPropNameInTable="___п_пColumn" msprop:Generator_UserColumnName="№ п/п" type="xs:int" />
@@ -453,7 +527,7 @@
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="Заказчик" msprop:Generator_TableClassName="ЗаказчикDataTable" msprop:Generator_TableVarName="tableЗаказчик" msprop:Generator_TablePropName="Заказчик" msprop:Generator_RowDeletingName="ЗаказчикRowDeleting" msprop:Generator_RowChangingName="ЗаказчикRowChanging" msprop:Generator_RowEvHandlerName="ЗаказчикRowChangeEventHandler" msprop:Generator_RowDeletedName="ЗаказчикRowDeleted" msprop:Generator_UserTableName="Заказчик" msprop:Generator_RowChangedName="ЗаказчикRowChanged" msprop:Generator_RowEvArgName="ЗаказчикRowChangeEvent" msprop:Generator_RowClassName="ЗаказчикRow">
+        <xs:element name="Заказчик" msprop:Generator_TableClassName="ЗаказчикDataTable" msprop:Generator_TableVarName="tableЗаказчик" msprop:Generator_RowChangedName="ЗаказчикRowChanged" msprop:Generator_TablePropName="Заказчик" msprop:Generator_RowDeletingName="ЗаказчикRowDeleting" msprop:Generator_RowChangingName="ЗаказчикRowChanging" msprop:Generator_RowEvHandlerName="ЗаказчикRowChangeEventHandler" msprop:Generator_RowDeletedName="ЗаказчикRowDeleted" msprop:Generator_RowClassName="ЗаказчикRow" msprop:Generator_UserTableName="Заказчик" msprop:Generator_RowEvArgName="ЗаказчикRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="_x2116__x0020_п_x002F_п" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="_column__п_п" msprop:Generator_ColumnPropNameInRow="___п_п" msprop:Generator_ColumnPropNameInTable="___п_пColumn" msprop:Generator_UserColumnName="№ п/п" type="xs:int" />
@@ -496,11 +570,17 @@
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="Заказы" msprop:Generator_TableClassName="ЗаказыDataTable" msprop:Generator_TableVarName="tableЗаказы" msprop:Generator_TablePropName="Заказы" msprop:Generator_RowDeletingName="ЗаказыRowDeleting" msprop:Generator_RowChangingName="ЗаказыRowChanging" msprop:Generator_RowEvHandlerName="ЗаказыRowChangeEventHandler" msprop:Generator_RowDeletedName="ЗаказыRowDeleted" msprop:Generator_UserTableName="Заказы" msprop:Generator_RowChangedName="ЗаказыRowChanged" msprop:Generator_RowEvArgName="ЗаказыRowChangeEvent" msprop:Generator_RowClassName="ЗаказыRow">
+        <xs:element name="Заказы" msprop:Generator_TableClassName="ЗаказыDataTable" msprop:Generator_TableVarName="tableЗаказы" msprop:Generator_RowChangedName="ЗаказыRowChanged" msprop:Generator_TablePropName="Заказы" msprop:Generator_RowDeletingName="ЗаказыRowDeleting" msprop:Generator_RowChangingName="ЗаказыRowChanging" msprop:Generator_RowEvHandlerName="ЗаказыRowChangeEventHandler" msprop:Generator_RowDeletedName="ЗаказыRowDeleted" msprop:Generator_RowClassName="ЗаказыRow" msprop:Generator_UserTableName="Заказы" msprop:Generator_RowEvArgName="ЗаказыRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="Id_заказа" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnId_заказа" msprop:Generator_ColumnPropNameInRow="Id_заказа" msprop:Generator_ColumnPropNameInTable="Id_заказаColumn" msprop:Generator_UserColumnName="Id_заказа" type="xs:int" />
-              <xs:element name="Дата_x0020_счета" msprop:Generator_ColumnVarNameInTable="columnДата_счета" msprop:Generator_ColumnPropNameInRow="Дата_счета" msprop:Generator_ColumnPropNameInTable="Дата_счетаColumn" msprop:Generator_UserColumnName="Дата счета" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Дата_x0020_счета" msprop:Generator_ColumnVarNameInTable="columnДата_счета" msprop:Generator_ColumnPropNameInRow="Дата_счета" msprop:Generator_ColumnPropNameInTable="Дата_счетаColumn" msprop:Generator_UserColumnName="Дата счета" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
               <xs:element name="_x2116__x0020_счета" msprop:Generator_ColumnVarNameInTable="_column__счета" msprop:Generator_ColumnPropNameInRow="___счета" msprop:Generator_ColumnPropNameInTable="___счетаColumn" msprop:Generator_UserColumnName="№ счета" type="xs:int" minOccurs="0" />
               <xs:element name="ФИО_Заказчика" msprop:Generator_ColumnVarNameInTable="columnФИО_Заказчика" msprop:Generator_ColumnPropNameInRow="ФИО_Заказчика" msprop:Generator_ColumnPropNameInTable="ФИО_ЗаказчикаColumn" msprop:Generator_UserColumnName="ФИО_Заказчика" minOccurs="0">
                 <xs:simpleType>
@@ -520,7 +600,7 @@
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="Запасные_x0020_части" msprop:Generator_TableClassName="Запасные_частиDataTable" msprop:Generator_TableVarName="tableЗапасные_части" msprop:Generator_TablePropName="Запасные_части" msprop:Generator_RowDeletingName="Запасные_частиRowDeleting" msprop:Generator_RowChangingName="Запасные_частиRowChanging" msprop:Generator_RowEvHandlerName="Запасные_частиRowChangeEventHandler" msprop:Generator_RowDeletedName="Запасные_частиRowDeleted" msprop:Generator_UserTableName="Запасные части" msprop:Generator_RowChangedName="Запасные_частиRowChanged" msprop:Generator_RowEvArgName="Запасные_частиRowChangeEvent" msprop:Generator_RowClassName="Запасные_частиRow">
+        <xs:element name="Запасные_x0020_части" msprop:Generator_TableClassName="Запасные_частиDataTable" msprop:Generator_TableVarName="tableЗапасные_части" msprop:Generator_RowChangedName="Запасные_частиRowChanged" msprop:Generator_TablePropName="Запасные_части" msprop:Generator_RowDeletingName="Запасные_частиRowDeleting" msprop:Generator_RowChangingName="Запасные_частиRowChanging" msprop:Generator_RowEvHandlerName="Запасные_частиRowChangeEventHandler" msprop:Generator_RowDeletedName="Запасные_частиRowDeleted" msprop:Generator_RowClassName="Запасные_частиRow" msprop:Generator_UserTableName="Запасные части" msprop:Generator_RowEvArgName="Запасные_частиRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="Id" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnId" msprop:Generator_ColumnPropNameInRow="Id" msprop:Generator_ColumnPropNameInTable="IdColumn" msprop:Generator_UserColumnName="Id" type="xs:int" />
@@ -542,6 +622,36 @@
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="ЗаказыЗапрос" msprop:Generator_TableClassName="ЗаказыЗапросDataTable" msprop:Generator_TableVarName="tableЗаказыЗапрос" msprop:Generator_TablePropName="ЗаказыЗапрос" msprop:Generator_RowDeletingName="ЗаказыЗапросRowDeleting" msprop:Generator_RowChangingName="ЗаказыЗапросRowChanging" msprop:Generator_RowEvHandlerName="ЗаказыЗапросRowChangeEventHandler" msprop:Generator_RowDeletedName="ЗаказыЗапросRowDeleted" msprop:Generator_UserTableName="ЗаказыЗапрос" msprop:Generator_RowChangedName="ЗаказыЗапросRowChanged" msprop:Generator_RowEvArgName="ЗаказыЗапросRowChangeEvent" msprop:Generator_RowClassName="ЗаказыЗапросRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Id_заказа" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnId_заказа" msprop:Generator_ColumnPropNameInRow="Id_заказа" msprop:Generator_ColumnPropNameInTable="Id_заказаColumn" msprop:Generator_UserColumnName="Id_заказа" type="xs:int" />
+              <xs:element name="Дата_x0020_счета" msprop:Generator_ColumnVarNameInTable="columnДата_счета" msprop:Generator_ColumnPropNameInRow="Дата_счета" msprop:Generator_ColumnPropNameInTable="Дата_счетаColumn" msprop:Generator_UserColumnName="Дата счета" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="_x2116__x0020_счета" msprop:Generator_ColumnVarNameInTable="_column__счета" msprop:Generator_ColumnPropNameInRow="___счета" msprop:Generator_ColumnPropNameInTable="___счетаColumn" msprop:Generator_UserColumnName="№ счета" type="xs:int" minOccurs="0" />
+              <xs:element name="ФИО_Заказчика" msprop:Generator_ColumnVarNameInTable="columnФИО_Заказчика" msprop:Generator_ColumnPropNameInRow="ФИО_Заказчика" msprop:Generator_ColumnPropNameInTable="ФИО_ЗаказчикаColumn" msprop:Generator_UserColumnName="ФИО_Заказчика" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ФИО_Поставщика" msprop:Generator_ColumnVarNameInTable="columnФИО_Поставщика" msprop:Generator_ColumnPropNameInRow="ФИО_Поставщика" msprop:Generator_ColumnPropNameInTable="ФИО_ПоставщикаColumn" msprop:Generator_UserColumnName="ФИО_Поставщика" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Всего_x0020_по_x0020_счету" msprop:Generator_ColumnVarNameInTable="columnВсего_по_счету" msprop:Generator_ColumnPropNameInRow="Всего_по_счету" msprop:Generator_ColumnPropNameInTable="Всего_по_счетуColumn" msprop:Generator_UserColumnName="Всего по счету" type="xs:int" minOccurs="0" />
             </xs:sequence>
           </xs:complexType>
         </xs:element>
@@ -571,14 +681,19 @@
       <xs:selector xpath=".//mstns:Запасные_x0020_части" />
       <xs:field xpath="mstns:Id" />
     </xs:unique>
+    <xs:unique name="ЗаказыЗапрос_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:ЗаказыЗапрос" />
+      <xs:field xpath="mstns:Id_заказа" />
+    </xs:unique>
   </xs:element>
   <xs:annotation>
     <xs:appinfo>
-      <msdata:Relationship name="Vin_x0020_кодыАвтомобили" msdata:parent="Vin_x0020_коды" msdata:child="Автомобили" msdata:parentkey="_x2116__x0020_п_x002F_п" msdata:childkey="Vin_x0020_код" msprop:Generator_UserChildTable="Автомобили" msprop:Generator_ChildPropName="GetАвтомобилиRows" msprop:Generator_UserRelationName="Vin кодыАвтомобили" msprop:Generator_ParentPropName="Vin_кодыRow" msprop:Generator_RelationVarName="relationVin_кодыАвтомобили" msprop:Generator_UserParentTable="Vin коды" />
-      <msdata:Relationship name="ЗаказчикАвтомобили" msdata:parent="Заказчик" msdata:child="Автомобили" msdata:parentkey="_x2116__x0020_п_x002F_п" msdata:childkey="Id_авто" msprop:Generator_UserChildTable="Автомобили" msprop:Generator_ChildPropName="GetАвтомобилиRows" msprop:Generator_UserRelationName="ЗаказчикАвтомобили" msprop:Generator_RelationVarName="relationЗаказчикАвтомобили" msprop:Generator_UserParentTable="Заказчик" msprop:Generator_ParentPropName="ЗаказчикRow" />
-      <msdata:Relationship name="Запасные_x0020_частиАвтомобили" msdata:parent="Запасные_x0020_части" msdata:child="Автомобили" msdata:parentkey="Id" msdata:childkey="Id_авто" msprop:Generator_UserChildTable="Автомобили" msprop:Generator_ChildPropName="GetАвтомобилиRows" msprop:Generator_UserRelationName="Запасные частиАвтомобили" msprop:Generator_RelationVarName="relationЗапасные_частиАвтомобили" msprop:Generator_UserParentTable="Запасные части" msprop:Generator_ParentPropName="Запасные_частиRow" />
-      <msdata:Relationship name="ЗаказыЗаказчик" msdata:parent="Заказы" msdata:child="Заказчик" msdata:parentkey="Id_заказа" msdata:childkey="_x2116__x0020_п_x002F_п" msprop:Generator_UserChildTable="Заказчик" msprop:Generator_ChildPropName="GetЗаказчикRows" msprop:Generator_UserRelationName="ЗаказыЗаказчик" msprop:Generator_RelationVarName="relationЗаказыЗаказчик" msprop:Generator_UserParentTable="Заказы" msprop:Generator_ParentPropName="ЗаказыRow" />
-      <msdata:Relationship name="АналогиЗапасные_x0020_части" msdata:parent="Аналоги" msdata:child="Запасные_x0020_части" msdata:parentkey="_x2116__x0020_п_x002F_п" msdata:childkey="Id" msprop:Generator_UserChildTable="Запасные части" msprop:Generator_ChildPropName="GetЗапасные_частиRows" msprop:Generator_UserRelationName="АналогиЗапасные части" msprop:Generator_ParentPropName="АналогиRow" msprop:Generator_RelationVarName="relationАналогиЗапасные_части" msprop:Generator_UserParentTable="Аналоги" />
+      <msdata:Relationship name="Vin_x0020_кодыАвтомобили" msdata:parent="Vin_x0020_коды" msdata:child="Автомобили" msdata:parentkey="_x2116__x0020_п_x002F_п" msdata:childkey="Vin_x0020_код" msprop:Generator_UserChildTable="Автомобили" msprop:Generator_ChildPropName="GetАвтомобилиRows" msprop:Generator_UserRelationName="Vin кодыАвтомобили" msprop:Generator_RelationVarName="relationVin_кодыАвтомобили" msprop:Generator_UserParentTable="Vin коды" msprop:Generator_ParentPropName="Vin_кодыRow" />
+      <msdata:Relationship name="ЗаказчикАвтомобили" msdata:parent="Заказчик" msdata:child="Автомобили" msdata:parentkey="_x2116__x0020_п_x002F_п" msdata:childkey="Id_авто" msprop:Generator_UserChildTable="Автомобили" msprop:Generator_ChildPropName="GetАвтомобилиRows" msprop:Generator_UserRelationName="ЗаказчикАвтомобили" msprop:Generator_ParentPropName="ЗаказчикRow" msprop:Generator_RelationVarName="relationЗаказчикАвтомобили" msprop:Generator_UserParentTable="Заказчик" />
+      <msdata:Relationship name="Запасные_x0020_частиАвтомобили" msdata:parent="Запасные_x0020_части" msdata:child="Автомобили" msdata:parentkey="Id" msdata:childkey="Id_авто" msprop:Generator_UserChildTable="Автомобили" msprop:Generator_ChildPropName="GetАвтомобилиRows" msprop:Generator_UserRelationName="Запасные частиАвтомобили" msprop:Generator_ParentPropName="Запасные_частиRow" msprop:Generator_RelationVarName="relationЗапасные_частиАвтомобили" msprop:Generator_UserParentTable="Запасные части" />
+      <msdata:Relationship name="ЗаказыЗаказчик" msdata:parent="Заказы" msdata:child="Заказчик" msdata:parentkey="Id_заказа" msdata:childkey="_x2116__x0020_п_x002F_п" msprop:Generator_UserChildTable="Заказчик" msprop:Generator_ChildPropName="GetЗаказчикRows" msprop:Generator_UserRelationName="ЗаказыЗаказчик" msprop:Generator_ParentPropName="ЗаказыRow" msprop:Generator_RelationVarName="relationЗаказыЗаказчик" msprop:Generator_UserParentTable="Заказы" />
+      <msdata:Relationship name="АналогиЗапасные_x0020_части" msdata:parent="Аналоги" msdata:child="Запасные_x0020_части" msdata:parentkey="_x2116__x0020_п_x002F_п" msdata:childkey="Id" msprop:Generator_UserChildTable="Запасные части" msprop:Generator_ChildPropName="GetЗапасные_частиRows" msprop:Generator_UserRelationName="АналогиЗапасные части" msprop:Generator_RelationVarName="relationАналогиЗапасные_части" msprop:Generator_UserParentTable="Аналоги" msprop:Generator_ParentPropName="АналогиRow" />
+      <msdata:Relationship name="ЗаказыЗаказчик1" msdata:parent="ЗаказыЗапрос" msdata:child="Заказчик" msdata:parentkey="Id_заказа" msdata:childkey="_x2116__x0020_п_x002F_п" msprop:Generator_UserChildTable="Заказчик" msprop:Generator_ChildPropName="GetЗаказчикRows" msprop:Generator_UserRelationName="ЗаказыЗаказчик1" msprop:Generator_RelationVarName="relationЗаказыЗаказчик1" msprop:Generator_UserParentTable="ЗаказыЗапрос" msprop:Generator_ParentPropName="ЗаказыЗапросRow" />
     </xs:appinfo>
   </xs:annotation>
 </xs:schema>

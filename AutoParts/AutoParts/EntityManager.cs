@@ -126,7 +126,7 @@ namespace AutoParts
         }
 
         /// <summary>
-        /// Возвращает отфильтрованную таблицу Vin кодов по условию <paramref name="condition"/>
+        /// Возвращает отфильтрованную таблицу Автомобили по условию <paramref name="condition"/>
         /// </summary>
         /// <param name="condition"></param>
         /// <returns></returns>
@@ -153,7 +153,7 @@ namespace AutoParts
         }
 
         /// <summary>
-        /// Возвращает отфильтрованную таблицу Vin кодов по условию <paramref name="condition"/>
+        /// Возвращает отфильтрованную таблицу Аналоги по условию <paramref name="condition"/>
         /// </summary>
         /// <param name="condition"></param>
         /// <returns></returns>
@@ -179,7 +179,7 @@ namespace AutoParts
         }
 
         /// <summary>
-        /// Возвращает отфильтрованную таблицу Vin кодов по условию <paramref name="condition"/>
+        /// Возвращает отфильтрованную таблицу Заказчиков по условию <paramref name="condition"/>
         /// </summary>
         /// <param name="condition"></param>
         /// <returns></returns>
@@ -206,7 +206,7 @@ namespace AutoParts
         }
 
         /// <summary>
-        /// Возвращает отфильтрованную таблицу Vin кодов по условию <paramref name="condition"/>
+        /// Возвращает отфильтрованную таблицу Заказы по условию <paramref name="condition"/>
         /// </summary>
         /// <param name="condition"></param>
         /// <returns></returns>
@@ -233,7 +233,7 @@ namespace AutoParts
         }
 
         /// <summary>
-        /// Возвращает отфильтрованную таблицу Vin кодов по условию <paramref name="condition"/>
+        /// Возвращает отфильтрованную таблицу Запасные_части по условию <paramref name="condition"/>
         /// </summary>
         /// <param name="condition"></param>
         /// <returns></returns>

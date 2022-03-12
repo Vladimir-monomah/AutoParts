@@ -63,9 +63,9 @@ namespace AutoParts.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap _25132894 {
+        internal static System.Drawing.Bitmap J_Je0r0q30444c {
             get {
-                object obj = ResourceManager.GetObject("_25132894", resourceCulture);
+                object obj = ResourceManager.GetObject("J_Je0r0q30444c", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -76,6 +76,16 @@ namespace AutoParts.Properties {
         internal static System.Drawing.Bitmap no_photo_girl {
             get {
                 object obj = ResourceManager.GetObject("no_photo_girl", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap кнопка_3 {
+            get {
+                object obj = ResourceManager.GetObject("кнопка_3", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

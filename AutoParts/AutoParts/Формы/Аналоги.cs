@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace AutoParts
+namespace AutoParts.Формы
 {
-    public partial class Заказы : Form
+    public partial class Аналоги : Form
     {
-        public Заказы()
+        public Аналоги()
         {
             InitializeComponent();
         }
