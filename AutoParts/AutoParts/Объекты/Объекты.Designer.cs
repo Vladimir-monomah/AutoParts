@@ -79,8 +79,8 @@
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
-            this.button17 = new System.Windows.Forms.Button();
             this.button22 = new System.Windows.Forms.Button();
+            this.button17 = new System.Windows.Forms.Button();
             this.tabPage5 = new System.Windows.Forms.TabPage();
             this.dataGridView4 = new System.Windows.Forms.DataGridView();
             this.реквизитыDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -93,8 +93,8 @@
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
-            this.button24 = new System.Windows.Forms.Button();
             this.button29 = new System.Windows.Forms.Button();
+            this.button24 = new System.Windows.Forms.Button();
             this.tabPage6 = new System.Windows.Forms.TabPage();
             this.dataGridView5 = new System.Windows.Forms.DataGridView();
             this.датаОтгрузкиDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -107,8 +107,8 @@
             this.textBox6 = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
-            this.button31 = new System.Windows.Forms.Button();
             this.button36 = new System.Windows.Forms.Button();
+            this.button31 = new System.Windows.Forms.Button();
             this.заказыTableAdapter = new AutoParts.AutoPartsDataSetTableAdapters.ЗаказыTableAdapter();
             this.vin_кодыTableAdapter = new AutoParts.AutoPartsDataSetTableAdapters.Vin_кодыTableAdapter();
             this.автомобилиTableAdapter = new AutoParts.AutoPartsDataSetTableAdapters.АвтомобилиTableAdapter();
@@ -525,6 +525,7 @@
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(1633, 30);
             this.textBox2.TabIndex = 25;
+            this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // label3
             // 
@@ -556,6 +557,7 @@
             this.button9.Size = new System.Drawing.Size(32, 30);
             this.button9.TabIndex = 17;
             this.button9.UseVisualStyleBackColor = true;
+            this.button9.Click += new System.EventHandler(this.button9_Click);
             // 
             // button15
             // 
@@ -565,6 +567,7 @@
             this.button15.TabIndex = 22;
             this.button15.Text = "Добавить";
             this.button15.UseVisualStyleBackColor = true;
+            this.button15.Click += new System.EventHandler(this.button15_Click);
             // 
             // tabPage4
             // 
@@ -572,8 +575,8 @@
             this.tabPage4.Controls.Add(this.textBox4);
             this.tabPage4.Controls.Add(this.label7);
             this.tabPage4.Controls.Add(this.label8);
-            this.tabPage4.Controls.Add(this.button17);
             this.tabPage4.Controls.Add(this.button22);
+            this.tabPage4.Controls.Add(this.button17);
             this.tabPage4.Location = new System.Drawing.Point(4, 25);
             this.tabPage4.Name = "tabPage4";
             this.tabPage4.Size = new System.Drawing.Size(1752, 823);
@@ -652,6 +655,15 @@
             this.label8.TabIndex = 24;
             this.label8.Text = "Аналоги";
             // 
+            // button22
+            // 
+            this.button22.Location = new System.Drawing.Point(8, 30);
+            this.button22.Name = "button22";
+            this.button22.Size = new System.Drawing.Size(109, 30);
+            this.button22.TabIndex = 22;
+            this.button22.Text = "Добавить";
+            this.button22.UseVisualStyleBackColor = true;
+            // 
             // button17
             // 
             this.button17.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -662,23 +674,14 @@
             this.button17.TabIndex = 17;
             this.button17.UseVisualStyleBackColor = true;
             // 
-            // button22
-            // 
-            this.button22.Location = new System.Drawing.Point(8, 30);
-            this.button22.Name = "button22";
-            this.button22.Size = new System.Drawing.Size(109, 30);
-            this.button22.TabIndex = 22;
-            this.button22.Text = "Добавить";
-            this.button22.UseVisualStyleBackColor = true;
-            // 
             // tabPage5
             // 
             this.tabPage5.Controls.Add(this.dataGridView4);
             this.tabPage5.Controls.Add(this.textBox5);
             this.tabPage5.Controls.Add(this.label9);
             this.tabPage5.Controls.Add(this.label10);
-            this.tabPage5.Controls.Add(this.button24);
             this.tabPage5.Controls.Add(this.button29);
+            this.tabPage5.Controls.Add(this.button24);
             this.tabPage5.Location = new System.Drawing.Point(4, 25);
             this.tabPage5.Name = "tabPage5";
             this.tabPage5.Size = new System.Drawing.Size(1752, 823);
@@ -793,6 +796,15 @@
             this.label10.TabIndex = 24;
             this.label10.Text = "Заказчик";
             // 
+            // button29
+            // 
+            this.button29.Location = new System.Drawing.Point(8, 30);
+            this.button29.Name = "button29";
+            this.button29.Size = new System.Drawing.Size(109, 30);
+            this.button29.TabIndex = 22;
+            this.button29.Text = "Добавить";
+            this.button29.UseVisualStyleBackColor = true;
+            // 
             // button24
             // 
             this.button24.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -803,23 +815,14 @@
             this.button24.TabIndex = 17;
             this.button24.UseVisualStyleBackColor = true;
             // 
-            // button29
-            // 
-            this.button29.Location = new System.Drawing.Point(8, 30);
-            this.button29.Name = "button29";
-            this.button29.Size = new System.Drawing.Size(109, 30);
-            this.button29.TabIndex = 22;
-            this.button29.Text = "Добавить";
-            this.button29.UseVisualStyleBackColor = true;
-            // 
             // tabPage6
             // 
             this.tabPage6.Controls.Add(this.dataGridView5);
             this.tabPage6.Controls.Add(this.textBox6);
             this.tabPage6.Controls.Add(this.label11);
             this.tabPage6.Controls.Add(this.label12);
-            this.tabPage6.Controls.Add(this.button31);
             this.tabPage6.Controls.Add(this.button36);
+            this.tabPage6.Controls.Add(this.button31);
             this.tabPage6.Location = new System.Drawing.Point(4, 25);
             this.tabPage6.Name = "tabPage6";
             this.tabPage6.Size = new System.Drawing.Size(1752, 823);
@@ -934,6 +937,15 @@
             this.label12.TabIndex = 24;
             this.label12.Text = "Запасные части";
             // 
+            // button36
+            // 
+            this.button36.Location = new System.Drawing.Point(8, 30);
+            this.button36.Name = "button36";
+            this.button36.Size = new System.Drawing.Size(109, 30);
+            this.button36.TabIndex = 22;
+            this.button36.Text = "Добавить";
+            this.button36.UseVisualStyleBackColor = true;
+            // 
             // button31
             // 
             this.button31.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -943,15 +955,6 @@
             this.button31.Size = new System.Drawing.Size(32, 30);
             this.button31.TabIndex = 17;
             this.button31.UseVisualStyleBackColor = true;
-            // 
-            // button36
-            // 
-            this.button36.Location = new System.Drawing.Point(8, 30);
-            this.button36.Name = "button36";
-            this.button36.Size = new System.Drawing.Size(109, 30);
-            this.button36.TabIndex = 22;
-            this.button36.Text = "Добавить";
-            this.button36.UseVisualStyleBackColor = true;
             // 
             // заказыTableAdapter
             // 

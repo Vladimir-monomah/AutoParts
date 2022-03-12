@@ -102,7 +102,7 @@ namespace AutoParts.Объекты
         /// <param name="e"></param>
         private void buttonDelete_Click(object sender, System.EventArgs e)
         {
-            var idEmployee = ((ЗаказыЗапросRow)((DataRowView)this.dataGridView.CurrentRow?.DataBoundItem)?.Row)?.Id_заказа;
+            var idEmployee = ((ЗаказыRow)((DataRowView)this.dataGridView.CurrentRow?.DataBoundItem)?.Row)?.Id_заказа;
             if (!idEmployee.HasValue)
             {
                 return;

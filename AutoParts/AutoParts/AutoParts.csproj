@@ -60,6 +60,12 @@
       <DependentUpon>AutoPartsDataSet.xsd</DependentUpon>
     </Compile>
     <Compile Include="EntityManager.cs" />
+    <Compile Include="Авто.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Авто.Designer.cs">
+      <DependentUpon>Авто.cs</DependentUpon>
+    </Compile>
     <Compile Include="Главная.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -75,6 +81,9 @@
       <DependentUpon>Объекты.cs</DependentUpon>
     </Compile>
     <Compile Include="Объекты\Объекты.Vin_коды.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Объекты\Объекты.Автомобили.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Объекты\Объекты.Общее.cs">
@@ -126,6 +135,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Авто.resx">
+      <DependentUpon>Авто.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Главная.resx">
       <DependentUpon>Главная.cs</DependentUpon>
     </EmbeddedResource>
@@ -134,6 +146,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Формы\Vin коды.resx">
       <DependentUpon>Vin коды.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Формы\Автомобили.resx">
+      <DependentUpon>Автомобили.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Формы\Заказы.resx">
       <DependentUpon>Заказы.cs</DependentUpon>

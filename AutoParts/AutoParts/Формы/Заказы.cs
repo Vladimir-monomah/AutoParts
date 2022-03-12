@@ -26,7 +26,7 @@ namespace AutoParts.Формы
             this.AutoPartsDataSet=autoPartsDataSet;
         }
 
-        public void LoadЗаказы(ЗаказыЗапросRow заказы)
+        public void LoadЗаказы(ЗаказыRow заказы)
         {
             this.заказы=EntityManager.FilterЗаказы($"Id_заказа={заказы.Id_заказа}").FirstOrDefault();
             this.tbDate.Text=заказы.Дата_счета;
