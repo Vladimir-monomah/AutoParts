@@ -31,6 +31,11 @@ namespace AutoParts
             this.formControlTabControlMap.Add(this.pictureBox2, "tabPage3");
 
             this.formControlTabControlMap.Add(this.заказыToolStripMenuItem, "tabPage3");
+            this.formControlTabControlMap.Add(this.vinКодыToolStripMenuItem, "tabPage1");
+            this.formControlTabControlMap.Add(this.автомобилиToolStripMenuItem, "tabPage2");
+            this.formControlTabControlMap.Add(this.аналогиToolStripMenuItem, "tabPage4");
+            this.formControlTabControlMap.Add(this.заказчикиToolStripMenuItem, "tabPage5");
+            this.formControlTabControlMap.Add(this.запасныеЧастиToolStripMenuItem, "tabPage6");
 
             this.tabControl.DrawMode = TabDrawMode.OwnerDrawFixed;
             this.tabControl.DrawItem += tabControl_DrawItem;

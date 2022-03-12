@@ -95,30 +95,35 @@
             this.автомобилиToolStripMenuItem.Name = "автомобилиToolStripMenuItem";
             this.автомобилиToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
             this.автомобилиToolStripMenuItem.Text = "Автомобили";
+            this.автомобилиToolStripMenuItem.Click += new System.EventHandler(this.AddTabControl);
             // 
             // запасныеЧастиToolStripMenuItem
             // 
             this.запасныеЧастиToolStripMenuItem.Name = "запасныеЧастиToolStripMenuItem";
             this.запасныеЧастиToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
             this.запасныеЧастиToolStripMenuItem.Text = "Запасные части";
+            this.запасныеЧастиToolStripMenuItem.Click += new System.EventHandler(this.AddTabControl);
             // 
             // заказчикиToolStripMenuItem
             // 
             this.заказчикиToolStripMenuItem.Name = "заказчикиToolStripMenuItem";
             this.заказчикиToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
             this.заказчикиToolStripMenuItem.Text = "Заказчики";
+            this.заказчикиToolStripMenuItem.Click += new System.EventHandler(this.AddTabControl);
             // 
             // vinКодыToolStripMenuItem
             // 
             this.vinКодыToolStripMenuItem.Name = "vinКодыToolStripMenuItem";
             this.vinКодыToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
             this.vinКодыToolStripMenuItem.Text = "Vin коды";
+            this.vinКодыToolStripMenuItem.Click += new System.EventHandler(this.AddTabControl);
             // 
             // аналогиToolStripMenuItem
             // 
             this.аналогиToolStripMenuItem.Name = "аналогиToolStripMenuItem";
             this.аналогиToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
             this.аналогиToolStripMenuItem.Text = "Аналоги";
+            this.аналогиToolStripMenuItem.Click += new System.EventHandler(this.AddTabControl);
             // 
             // menuStrip1
             // 
