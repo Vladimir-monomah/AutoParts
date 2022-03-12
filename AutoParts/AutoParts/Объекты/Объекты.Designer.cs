@@ -633,6 +633,7 @@
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(1633, 30);
             this.textBox4.TabIndex = 25;
+            this.textBox4.TextChanged += new System.EventHandler(this.textBox4_TextChanged);
             // 
             // label7
             // 
@@ -663,6 +664,7 @@
             this.button22.TabIndex = 22;
             this.button22.Text = "Добавить";
             this.button22.UseVisualStyleBackColor = true;
+            this.button22.Click += new System.EventHandler(this.button22_Click);
             // 
             // button17
             // 
@@ -673,6 +675,7 @@
             this.button17.Size = new System.Drawing.Size(32, 30);
             this.button17.TabIndex = 17;
             this.button17.UseVisualStyleBackColor = true;
+            this.button17.Click += new System.EventHandler(this.button17_Click);
             // 
             // tabPage5
             // 

@@ -35,10 +35,10 @@ namespace AutoParts.Объекты
 
         private void textBox2_TextChanged(object sender, System.EventArgs e)
         {
-            this.автомобилиBindingSource.Filter = this.BuildCardFilter();
+            this.автомобилиBindingSource.Filter = this.BuildWorkerCard();
         }
 
-        private string BuildCardFilter()
+        private string BuildWorkerCard()
         {
             var filterExpressionList = new List<string>();
             var fieldFilter = this.textBox2.Text;
